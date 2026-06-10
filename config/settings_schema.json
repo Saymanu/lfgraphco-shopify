@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Brand and business",
+    "settings": [
+      { "type": "text", "id": "business_phone", "label": "Phone number", "default": "972-840-8337" },
+      { "type": "text", "id": "business_location", "label": "Business location", "default": "Garland, Texas" },
+      { "type": "text", "id": "primary_cta", "label": "Primary CTA", "default": "Request a Quote" },
+      { "type": "color", "id": "color_primary", "label": "Primary red", "default": "#b5121b" },
+      { "type": "color", "id": "color_dark", "label": "Dark color", "default": "#111111" },
+      { "type": "color", "id": "color_light", "label": "Light background", "default": "#f7f7f5" }
+    ]
+  },
+  {
+    "name": "Marketing integrations",
+    "settings": [
+      { "type": "text", "id": "ga_measurement_id", "label": "Google Analytics Measurement ID", "default": "" },
+      { "type": "text", "id": "gtm_container_id", "label": "Google Tag Manager Container ID", "default": "" },
+      { "type": "text", "id": "meta_pixel_id", "label": "Meta Pixel ID", "default": "" },
+      { "type": "text", "id": "klaviyo_company_id", "label": "Klaviyo Company ID", "default": "" },
+      { "type": "text", "id": "google_ads_conversion_id", "label": "Google Ads Conversion ID", "default": "" }
+    ]
+  }
+]

@@ -10,7 +10,31 @@
         "features": "Booster Clubs,School Spirit Wear,Church Groups,Campaign Deadlines,Team Apparel"
       }
     },
+    "mockup": {
+      "type": "mockup-offer",
+      "settings": {
+        "eyebrow": "Fundraiser-ready apparel",
+        "heading": "Plan the apparel before the campaign starts.",
+        "intro": "A clear quote helps set goals, choose products and promote the fundraiser with confidence."
+      }
+    },
+    "trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Fundraisers can use printing, embroidery, DTF and promo items.",
+        "intro": "Build a campaign around shirts, hoodies, caps, polos or giveaways that fit your audience and deadline."
+      }
+    },
+    "lead": {
+      "type": "lead-capture",
+      "settings": {
+        "eyebrow": "Fundraiser quote",
+        "heading": "Tell us your group, goal and deadline.",
+        "intro": "Send the project basics and L F Graphco will help you shape a quote-ready fundraising apparel plan.",
+        "form_context": "Fundraiser landing page"
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "quote"]
+  "order": ["main", "mockup", "trust", "lead", "quote"]
 }

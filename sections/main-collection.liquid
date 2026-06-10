@@ -1,0 +1,25 @@
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">Shop L F Graphco</p>
+      <h1>{{ collection.title }}</h1>
+      <p>{{ collection.description | default: "Browse custom apparel, spirit wear, uniforms, DTF transfers and promotional product categories." }}</p>
+    </div>
+    <div class="grid">
+      {% for product in collection.products %}
+        <article class="card">
+          <a href="{{ product.url }}">
+            {% if product.featured_image %}{{ product.featured_image | image_url: width: 500 | image_tag: loading: 'lazy', alt: product.title }}{% endif %}
+            <h2>{{ product.title }}</h2>
+          </a>
+          <p>{{ product.price | money }}</p>
+        </article>
+      {% else %}
+        <article class="card"><h2>Add products in Shopify</h2><p>Create collections for custom t-shirts, embroidered polos, hoodies, safety apparel, company uniforms, spirit wear, DTF transfers and promotional products.</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "Main collection", "settings": [] }
+{% endschema %}

@@ -2,7 +2,23 @@
   "sections": {
     "hero": { "type": "home-hero" },
     "photos": { "type": "home-photo-showcase" },
+    "lead_capture": {
+      "type": "lead-capture",
+      "settings": {
+        "eyebrow": "Fast quote request",
+        "heading": "Tell us what you need and when you need it.",
+        "intro": "Share your project type, quantity and deadline. L F Graphco will help you move from idea to quote-ready details fast.",
+        "form_context": "Homepage lead capture"
+      }
+    },
     "services": { "type": "services-grid" },
+    "mockup": {
+      "type": "mockup-offer",
+      "settings": {
+        "heading": "Ask about a free mockup with your quote.",
+        "intro": "Upload your logo or describe the idea. The team can review placement, decoration method and garment options before final pricing."
+      }
+    },
     "pricing": {
       "type": "pricing-packages",
       "settings": {
@@ -13,9 +29,16 @@
       }
     },
     "products": { "type": "product-categories" },
+    "conversion_trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Production options for every kind of group order.",
+        "intro": "From one-time events to repeat team stores, L F Graphco helps customers choose the right mix of screen printing, embroidery, DTF and promotional products."
+      }
+    },
     "trust": { "type": "trust-section" },
     "photo_trust": { "type": "trust-photo-strip" },
     "quote": { "type": "quote-band" }
   },
-  "order": ["hero", "photos", "services", "pricing", "products", "trust", "photo_trust", "quote"]
+  "order": ["hero", "photos", "lead_capture", "services", "mockup", "pricing", "products", "conversion_trust", "trust", "photo_trust", "quote"]
 }

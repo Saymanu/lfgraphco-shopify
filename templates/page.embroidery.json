@@ -19,7 +19,16 @@
         "intro": "The embroidery gallery shows actual equipment and finished stitch details customers can evaluate before quoting."
       }
     },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "polos",
+        "eyebrow": "Embroidered polo pricing",
+        "heading": "Embroidered Polos starting at $179.",
+        "intro": "Great for companies, churches, schools, medical offices, restaurants and real estate teams."
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "gallery", "quote"]
+  "order": ["main", "gallery", "pricing", "quote"]
 }

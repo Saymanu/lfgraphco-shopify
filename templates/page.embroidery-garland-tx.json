@@ -1,0 +1,7 @@
+{
+  "sections": {
+    "main": { "type": "main-page", "settings": { "eyebrow": "Embroidery Garland TX", "heading": "Custom embroidery in Garland, Texas for polished branded apparel.", "lead": "Create embroidered polos, hats, jackets, workwear and uniforms for your business, school or team.", "body": "<p>L F Graphco provides Garland embroidery options for professional apparel that needs a clean stitched logo. Embroidery works well for polos, caps, jackets, bags and staff uniforms.</p><p>Request a quote with your logo, item type, quantity and deadline to get started.</p>", "features": "Garland Embroidery,Polos,Hats,Jackets,Uniforms" } },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "quote"]
+}

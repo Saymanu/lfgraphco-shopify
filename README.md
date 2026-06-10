@@ -13,6 +13,8 @@ L F Graphco LLC provides screen printing, embroidery, DTF printing, promotional 
 - Contact, request quote, upload artwork and FAQ templates
 - DTF printing page with full-color apparel proof from uploaded photos
 - Pricing-focused collection templates for Custom T-Shirts, Embroidered Polos, Hoodies, DTF Transfers and Promotional Products
+- Lead generation system with homepage quote capture, sticky mobile CTA, exit-intent quote popup and free mockup offers
+- Conversion landing templates for Team Stores, School Spirit Wear, Company Uniforms, Church Apparel and Fundraisers
 - Blog, product, collection and cart templates
 - SEO landing page templates for Garland, Mesquite, Dallas and DFW
 - Google Analytics, Google Tag Manager, Meta Pixel, Klaviyo and Google Ads placeholders
@@ -34,3 +36,4 @@ Pricing tables are based on `brand-assets/pricing/LFGraphco_Pricing_Reference.md
 - `docs/TRACKING_AND_MARKETING.md`
 - `docs/BRAND_ASSETS.md`
 - `docs/PRICING_IMPLEMENTATION.md`
+- `docs/LEAD_GENERATION_SYSTEM.md`

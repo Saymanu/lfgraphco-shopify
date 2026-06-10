@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "About L F Graphco LLC",
+        "heading": "Garland, Texas apparel production for schools, companies and teams.",
+        "lead": "L F Graphco LLC helps North Texas organizations create custom apparel, branded merchandise, online stores and fundraiser programs.",
+        "body": "<p>Based in Garland, Texas, L F Graphco LLC serves customers who need reliable screen printing, embroidery, DTF printing, promotional products, team stores and corporate apparel.</p><p>The storefront is designed around fast quote requests, clean ecommerce category paths and local search visibility for Garland, Mesquite, Dallas and DFW buyers.</p>",
+        "features": "Garland TX,Screen Printing,Embroidery,Team Stores,Promotional Products"
+      }
+    },
+    "trust": { "type": "trust-section" },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "trust", "quote"]
+}

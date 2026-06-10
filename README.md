@@ -37,3 +37,4 @@ Pricing tables are based on `brand-assets/pricing/LFGraphco_Pricing_Reference.md
 - `docs/BRAND_ASSETS.md`
 - `docs/PRICING_IMPLEMENTATION.md`
 - `docs/LEAD_GENERATION_SYSTEM.md`
+- `docs/SITE_AUDIT.md`

@@ -1,0 +1,24 @@
+<section class="section">
+  <div class="section-inner content-grid">
+    <div>
+      <p class="eyebrow">Contact L F Graphco</p>
+      <h1>Questions, deadlines or order ideas? Let’s talk.</h1>
+      <p>Call {{ settings.business_phone }} or send a message with the basics. Include product type, quantity, deadline and whether artwork is ready.</p>
+      <ul class="feature-list"><li>Garland, Texas</li><li>Serving Dallas, Mesquite and DFW</li><li>Quote-focused support</li></ul>
+    </div>
+    <div class="form-panel">
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}<p><strong>Thanks. Your message has been sent.</strong></p>{% endif %}
+        {{ form.errors | default_errors }}
+        <div class="field"><label for="ContactName">Name</label><input id="ContactName" name="contact[name]" required></div>
+        <div class="field"><label for="ContactEmail">Email</label><input id="ContactEmail" type="email" name="contact[email]" required></div>
+        <div class="field"><label for="ContactPhone">Phone</label><input id="ContactPhone" name="contact[phone]"></div>
+        <div class="field"><label for="ContactMessage">Message</label><textarea id="ContactMessage" name="contact[body]" required></textarea></div>
+        <button class="button" type="submit">Send Message</button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "Contact form", "settings": [] }
+{% endschema %}

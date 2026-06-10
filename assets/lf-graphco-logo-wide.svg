@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 170" role="img" aria-labelledby="title desc">
+  <title id="title">L F Graphco LLC</title>
+  <desc id="desc">L F Graphco brand logo using the extracted blue, orange and green palette.</desc>
+  <rect width="560" height="170" rx="18" fill="#FEFEFE"/>
+  <g fill="none" stroke="#008CCC" stroke-width="11" stroke-linejoin="round">
+    <path d="M42 31h114v108H42z"/>
+    <path d="M84 52v68h54"/>
+    <path d="M116 52h58M116 85h47"/>
+  </g>
+  <circle cx="163" cy="116" r="17" fill="#FF6600"/>
+  <path d="M183 129c24-31 51-45 84-41" stroke="#33CC33" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <text x="210" y="73" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="800" fill="#008CCC">L F GRAPHCO</text>
+  <text x="213" y="113" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="3" fill="#373435">CUSTOM PRINTING</text>
+  <text x="213" y="141" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#4CB752">Screen Printing | Embroidery | Promo Products</text>
+</svg>

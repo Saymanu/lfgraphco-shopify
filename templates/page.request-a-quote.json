@@ -9,8 +9,23 @@
         "intro": "These examples help you estimate a project quickly. Final pricing is confirmed after order details and artwork are reviewed."
       }
     },
+    "mockup": {
+      "type": "mockup-offer",
+      "settings": {
+        "eyebrow": "Free mockup offer",
+        "heading": "Need help visualizing the order?",
+        "intro": "Send artwork or describe the project. L F Graphco can review placement, garment options and decoration method before final pricing."
+      }
+    },
     "quote": { "type": "quote-form" },
+    "conversion_trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Quote screen printing, embroidery, DTF and promotional products in one place.",
+        "intro": "Use this form for apparel programs, team stores, company uniforms, church apparel, fundraisers and branded merchandise."
+      }
+    },
     "trust": { "type": "trust-section" }
   },
-  "order": ["pricing", "quote", "trust"]
+  "order": ["pricing", "mockup", "quote", "conversion_trust", "trust"]
 }

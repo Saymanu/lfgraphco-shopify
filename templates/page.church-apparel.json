@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "Church Apparel",
+        "heading": "Custom church shirts, polos and event apparel.",
+        "lead": "Create apparel for ministries, volunteers, outreach events, youth groups, retreats and fundraising campaigns.",
+        "body": "<p>L F Graphco helps churches and faith-based groups build apparel around events, volunteer teams, staff uniforms and community outreach. Use screen printing for event shirts, embroidery for polos and hats, DTF for detailed full-color artwork and promo products for giveaways.</p><p>Send your design idea, group size, event date and apparel preferences to request a quote.</p>",
+        "features": "Volunteer Shirts,Youth Groups,Retreat Apparel,Embroidered Polos,Outreach Events"
+      }
+    },
+    "mockup": {
+      "type": "mockup-offer",
+      "settings": {
+        "heading": "Get artwork reviewed before the church event.",
+        "intro": "Share your logo, theme, scripture reference or design notes. L F Graphco can help turn the idea into a quote-ready apparel project."
+      }
+    },
+    "trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Church apparel can use screen printing, embroidery, DTF and promo products.",
+        "intro": "Quote volunteer shirts, staff polos, youth apparel, event giveaways and fundraiser merchandise in one place."
+      }
+    },
+    "lead": {
+      "type": "lead-capture",
+      "settings": {
+        "eyebrow": "Church apparel quote",
+        "heading": "Tell us about the ministry, event and deadline.",
+        "intro": "Send the project basics and the team will help you choose the right decoration method and next step.",
+        "form_context": "Church apparel landing page"
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "mockup", "trust", "lead", "quote"]
+}

@@ -1,7 +1,16 @@
 {
   "sections": {
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "featured",
+        "eyebrow": "Plan your budget",
+        "heading": "Review starting prices before requesting a quote.",
+        "intro": "These examples help you estimate a project quickly. Final pricing is confirmed after order details and artwork are reviewed."
+      }
+    },
     "quote": { "type": "quote-form" },
     "trust": { "type": "trust-section" }
   },
-  "order": ["quote", "trust"]
+  "order": ["pricing", "quote", "trust"]
 }

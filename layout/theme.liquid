@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_primary }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <title>{{ page_title }}{% unless page_title contains shop.name %} | {{ shop.name }}{% endunless %}</title>
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% else %}
+      <meta name="description" content="L F Graphco LLC in Garland, Texas provides custom screen printing, embroidery, DTF printing, promotional products, team stores, school spirit wear, and corporate apparel.">
+    {% endif %}
+    <style>
+      :root {
+        --color-primary: {{ settings.color_primary }};
+        --color-dark: {{ settings.color_dark }};
+        --color-light: {{ settings.color_light }};
+      }
+    </style>
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {% render 'tracking-head' %}
+    {% render 'structured-data' %}
+    {{ content_for_header }}
+  </head>
+  <body>
+    {% render 'tracking-body' %}
+    <a class="skip-link" href="#MainContent">Skip to content</a>
+    {% sections 'header-group' %}
+    <main id="MainContent" role="main">
+      {{ content_for_layout }}
+    </main>
+    {% sections 'footer-group' %}
+    <div class="mobile-cta" aria-label="Quick contact actions">
+      <a href="tel:{{ settings.business_phone | remove: '-' | remove: ' ' }}">Call {{ settings.business_phone }}</a>
+      <a href="/pages/request-a-quote">Request Quote</a>
+    </div>
+  </body>
+</html>

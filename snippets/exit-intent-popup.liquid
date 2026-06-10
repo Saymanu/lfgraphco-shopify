@@ -1,0 +1,54 @@
+{% liquid
+  assign phone_href = settings.business_phone | remove: '-' | remove: ' '
+%}
+<div class="exit-popup" data-exit-popup hidden>
+  <div class="exit-popup__backdrop" data-exit-close></div>
+  <div class="exit-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="ExitPopupTitle">
+    <button class="exit-popup__close" type="button" data-exit-close aria-label="Close quote popup">&times;</button>
+    <p class="eyebrow">Before you go</p>
+    <h2 id="ExitPopupTitle">Want a fast quote before your deadline fills up?</h2>
+    <p>Send the basics now or call {{ settings.business_phone }}. L F Graphco can review quantity, artwork, garment type and due date so you know the next step.</p>
+    {% form 'contact' %}
+      {% if form.posted_successfully? %}<p><strong>Thanks. Your request has been sent.</strong></p>{% endif %}
+      {{ form.errors | default_errors }}
+      <input type="hidden" name="contact[form_type]" value="Exit intent quote popup">
+      <div class="field-row">
+        <div class="field"><label for="ExitName">Name</label><input id="ExitName" name="contact[name]" required></div>
+        <div class="field"><label for="ExitPhone">Phone</label><input id="ExitPhone" name="contact[phone]" required></div>
+      </div>
+      <div class="field"><label for="ExitProject">Project Type</label><select id="ExitProject" name="contact[quote_type]"><option>Screen Printing</option><option>Embroidery</option><option>DTF Printing</option><option>Promotional Products</option><option>Team Store</option><option>Fundraiser</option></select></div>
+      <button class="button" type="submit">Request A Quote</button>
+      <a class="button button-secondary" href="tel:{{ phone_href }}">Call {{ settings.business_phone }}</a>
+    {% endform %}
+  </div>
+</div>
+<script>
+  (function () {
+    var popup = document.querySelector('[data-exit-popup]');
+    if (!popup || sessionStorage.getItem('lfgraphcoExitPopupSeen') === 'true') return;
+    var hasShown = false;
+    function showPopup() {
+      if (hasShown) return;
+      hasShown = true;
+      sessionStorage.setItem('lfgraphcoExitPopupSeen', 'true');
+      popup.hidden = false;
+      document.documentElement.classList.add('exit-popup-open');
+    }
+    function closePopup() {
+      popup.hidden = true;
+      document.documentElement.classList.remove('exit-popup-open');
+    }
+    document.addEventListener('mouseout', function (event) {
+      if (event.clientY <= 0 && !event.relatedTarget) showPopup();
+    });
+    window.setTimeout(function () {
+      if (window.matchMedia('(max-width: 640px)').matches) showPopup();
+    }, 45000);
+    popup.addEventListener('click', function (event) {
+      if (event.target.hasAttribute('data-exit-close')) closePopup();
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closePopup();
+    });
+  })();
+</script>

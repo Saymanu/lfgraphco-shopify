@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "Company Uniforms",
+        "heading": "Company uniforms and branded staff apparel in Garland, Texas.",
+        "lead": "Get quote-ready help for polos, work shirts, hoodies, safety apparel, hats and promotional products for your team.",
+        "body": "<p>L F Graphco helps businesses outfit employees with apparel that looks consistent on the job, at events and in customer-facing settings. Choose embroidery for polished polos and caps, screen printing for larger staff shirt runs, DTF for detailed full-color artwork and promotional products for campaigns or employee gifts.</p><p>Send your company name, logo, quantity, garment ideas and deadline to start the quote.</p>",
+        "features": "Staff Apparel,Embroidered Polos,Work Shirts,Hoodies,Safety Apparel"
+      }
+    },
+    "mockup": {
+      "type": "mockup-offer",
+      "settings": {
+        "heading": "Review logo placement before ordering uniforms.",
+        "intro": "Share your logo and apparel needs so L F Graphco can help review the right production method for your staff."
+      }
+    },
+    "trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Uniform programs can combine embroidery, printing and promo items.",
+        "intro": "Quote apparel for construction crews, restaurants, offices, medical teams, sales staff and local service businesses."
+      }
+    },
+    "lead": {
+      "type": "lead-capture",
+      "settings": {
+        "eyebrow": "Uniform quote",
+        "heading": "Get company uniform pricing.",
+        "intro": "Send your company, project type, quantity and deadline. L F Graphco will help move the order toward pricing.",
+        "form_context": "Company uniform landing page"
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "mockup", "trust", "lead", "quote"]
+}

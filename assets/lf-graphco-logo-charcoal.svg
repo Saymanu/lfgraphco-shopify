@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+  <title id="title">L F Graphco LLC charcoal logo</title>
+  <desc id="desc">Charcoal single-color L F Graphco logo.</desc>
+  <rect width="220" height="220" rx="22" fill="#FEFEFE"/>
+  <rect x="27" y="25" width="166" height="166" fill="none" stroke="#373435" stroke-width="13"/>
+  <path d="M74 55v100h77" fill="none" stroke="#373435" stroke-width="15" stroke-linecap="square"/>
+  <path d="M118 55h70M118 96h58" fill="none" stroke="#373435" stroke-width="15" stroke-linecap="square"/>
+</svg>

@@ -4,13 +4,17 @@
       {% if product.featured_image %}
         {{ product.featured_image | image_url: width: 900 | image_tag: loading: 'eager', alt: product.title }}
       {% else %}
-        <div class="card"><h1>{{ product.title }}</h1><p>Product image placeholder. Add production photography or mockups in Shopify.</p></div>
+        <div class="card product-image-fallback"><p class="eyebrow">Custom order product</p><p>Upload final product photography in Shopify when this item is ready for public sale. For custom orders, request a quote and share artwork for review.</p><a class="button button-secondary" href="/pages/upload-artwork">Upload Artwork</a></div>
       {% endif %}
     </div>
     <div>
       <p class="eyebrow">Custom apparel product</p>
       <h1>{{ product.title }}</h1>
-      <div>{{ product.description }}</div>
+      {% if product.description != blank %}
+        <div>{{ product.description }}</div>
+      {% else %}
+        <p>Request pricing for this custom apparel or promotional product. Final details depend on quantity, artwork, decoration method and turnaround time.</p>
+      {% endif %}
       {% form 'product', product %}
         <div class="field">
           <label for="ProductSelect">Options</label>

@@ -17,4 +17,4 @@ The uploaded photos do not show a standalone DTF machine. The DTF page uses full
 
 ## Theme usage
 
-The Shopify theme references the uploaded repository photo files directly from `brand-assets/photos` so the storefront imagery stays tied to the real submitted assets. HEIC photos are used where they are the only uploaded source for equipment or workspace proof.
+The Shopify theme uses optimized JPG assets in `assets/` that were created from the uploaded photo set. The original files remain in `brand-assets/photos` for reference, but storefront sections avoid direct raw GitHub image URLs and HEIC files so images load reliably across browsers and Shopify storefront previews.

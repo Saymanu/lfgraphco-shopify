@@ -11,6 +11,7 @@ L F Graphco LLC provides screen printing, embroidery, DTF printing, promotional 
 - Mobile-first Shopify theme scaffold
 - Homepage and required service pages
 - Contact, request quote, upload artwork and FAQ templates
+- DTF printing page with full-color apparel proof from uploaded photos
 - Blog, product, collection and cart templates
 - SEO landing page templates for Garland, Mesquite, Dallas and DFW
 - Google Analytics, Google Tag Manager, Meta Pixel, Klaviyo and Google Ads placeholders

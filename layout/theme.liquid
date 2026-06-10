@@ -5,15 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="{{ settings.color_primary }}">
     <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="icon" href="{{ 'favicon.svg' | asset_url }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ 'lf-graphco-logo.svg' | asset_url }}">
     <title>{{ page_title }}{% unless page_title contains shop.name %} | {{ shop.name }}{% endunless %}</title>
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% else %}
       <meta name="description" content="L F Graphco LLC in Garland, Texas provides custom screen printing, embroidery, DTF printing, promotional products, team stores, school spirit wear, and corporate apparel.">
     {% endif %}
+    <meta property="og:site_name" content="L F Graphco LLC">
+    <meta property="og:title" content="{{ page_title | escape }}">
+    <meta property="og:description" content="{% if page_description %}{{ page_description | escape }}{% else %}Custom screen printing, embroidery, DTF printing, promotional products, team stores and corporate apparel in Garland, Texas.{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:image" content="{{ 'lf-graphco-logo-wide.svg' | asset_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page_title | escape }}">
+    <meta name="twitter:description" content="{% if page_description %}{{ page_description | escape }}{% else %}Custom screen printing, embroidery, DTF printing, promotional products, team stores and corporate apparel in Garland, Texas.{% endif %}">
+    <meta name="twitter:image" content="{{ 'lf-graphco-logo-wide.svg' | asset_url }}">
     <style>
       :root {
         --color-primary: {{ settings.color_primary }};
+        --color-accent: {{ settings.color_accent }};
+        --color-success: {{ settings.color_success }};
         --color-dark: {{ settings.color_dark }};
         --color-light: {{ settings.color_light }};
       }

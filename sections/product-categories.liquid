@@ -6,11 +6,13 @@
       <p>Use these collections for Shopify products, Google Shopping feeds, Meta catalog feeds and campaign landing pages.</p>
     </div>
     <div class="grid">
-      {% assign categories = "Custom T-Shirts,Embroidered Polos,Hoodies,Safety Apparel,Company Uniforms,Spirit Wear,DTF Transfers,Promotional Products" | split: "," %}
-      {% for category in categories %}
+      {% assign categories = "Custom T-Shirts|/collections/custom-t-shirts,Embroidered Polos|/collections/embroidered-polos,Hoodies|/collections/hoodies,Safety Apparel|/collections/safety-apparel,Company Uniforms|/collections/company-uniforms,Spirit Wear|/collections/spirit-wear,DTF Transfers|/collections/dtf-transfers,Promotional Products|/collections/promotional-products" | split: "," %}
+      {% for item in categories %}
+        {% assign parts = item | split: "|" %}
         <article class="card">
-          <strong>{{ category }}</strong>
+          <strong>{{ parts[0] }}</strong>
           <p>Build this category with clear variants, sizes, decoration options and quote-driven bulk pricing.</p>
+          <a class="card-link" href="{{ parts[1] }}">View pricing examples</a>
         </article>
       {% endfor %}
     </div>

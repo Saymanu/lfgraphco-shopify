@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "Screen Printing Garland TX",
+        "heading": "Custom screen printed shirts, hoodies and spirit wear.",
+        "lead": "Get durable screen printing for school events, booster clubs, construction crews, restaurants, churches, teams and branded business apparel.",
+        "body": "<p>Screen printing is ideal for larger apparel orders where bold graphics, repeatable color and strong wash durability matter. L F Graphco helps customers plan shirt styles, ink colors, print locations, sizing and deadlines.</p><p>Use screen printing for custom t-shirts, hoodies, safety apparel, spirit wear, event shirts and company uniforms across Garland, Mesquite, Dallas and DFW.</p>",
+        "features": "Custom T-Shirts,Hoodies,Spirit Wear,Safety Apparel,Bulk Orders"
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "quote"]
+}

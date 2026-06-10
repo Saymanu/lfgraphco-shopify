@@ -1,0 +1,23 @@
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">Blog</p>
+      <h1>{{ blog.title | default: "L F Graphco Apparel Tips" }}</h1>
+      <p>Guides for custom shirts, embroidery, promotional products, school spirit wear, team stores and local business branding.</p>
+    </div>
+    <div class="grid">
+      {% for article in blog.articles %}
+        <article class="card">
+          <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+          <p>{{ article.excerpt_or_content | strip_html | truncate: 150 }}</p>
+          <a href="{{ article.url }}">Read more</a>
+        </article>
+      {% else %}
+        <article class="card"><h2>Plan your first post</h2><p>Add articles about ordering custom t-shirts, preparing artwork and choosing embroidery versus screen printing.</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "Main blog", "settings": [] }
+{% endschema %}

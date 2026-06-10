@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "Team Stores",
+        "heading": "Online apparel stores for teams, schools and organizations.",
+        "lead": "Simplify group ordering with Shopify-powered team stores for spirit wear, uniforms, fundraisers and employee apparel.",
+        "body": "<p>Team stores reduce paper forms, scattered payments and manual size tracking. L F Graphco can structure apparel options, deadlines, product descriptions and order collection around your organization.</p><p>Use team stores for sports teams, booster clubs, school spirit wear, staff apparel, church groups and company merch drops.</p>",
+        "features": "Online Ordering,Spirit Wear,Booster Clubs,Employee Apparel,Fundraiser Stores"
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "quote"]
+}

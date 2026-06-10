@@ -5,12 +5,21 @@
       "settings": {
         "eyebrow": "Promotional Products",
         "heading": "Branded merchandise for events, teams and business campaigns.",
-        "lead": "Source promotional products that keep your name visible with customers, employees, students and supporters.",
-        "body": "<p>L F Graphco supports branded giveaways, drinkware, bags, office items, event merch and corporate gifts. Promotional products can be paired with apparel orders for grand openings, school campaigns, trade shows and employee programs.</p><p>Request a quote with your target audience, budget, quantity and deadline so the right products can be recommended.</p>",
-        "features": "Drinkware,Bags,Giveaways,Corporate Gifts,Event Merchandise"
+        "lead": "Build branded campaigns around apparel, sponsor visibility, event merchandise and group distribution.",
+        "body": "<p>The uploaded photos show finished event shirts with sponsor logos, group apparel with detailed art and workspace staging for orders. While the photo set does not show drinkware or hard goods, it does show how L F Graphco supports branded campaigns that need visible customer names, organization marks and event-ready apparel.</p><p>Pair apparel with promotional products for schools, sports, company events, reunions, churches, wellness events and local campaigns.</p>",
+        "features": "Event Apparel,Sponsor Logos,Group Campaigns,Customer Work,Order Staging"
+      }
+    },
+    "gallery": {
+      "type": "photo-gallery",
+      "settings": {
+        "gallery_type": "promotional",
+        "eyebrow": "Campaign proof",
+        "heading": "Customer work that supports branded campaigns.",
+        "intro": "Photos show event apparel, sponsor visibility, shop signage and staging for organization orders."
       }
     },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "quote"]
+  "order": ["main", "gallery", "quote"]
 }

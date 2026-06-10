@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "Embroidery Garland TX",
+        "heading": "Professional embroidered polos, hats, jackets and uniforms.",
+        "lead": "Give your business, school or team a clean professional finish with custom embroidery from L F Graphco LLC.",
+        "body": "<p>Embroidery is the right choice for polos, hats, jackets, bags, uniforms and long-term corporate apparel. It gives logos a dimensional stitched finish that looks polished in the office, on job sites and at events.</p><p>L F Graphco can help with logo placement, thread color planning, garment selection and quote-ready order details.</p>",
+        "features": "Embroidered Polos,Hats,Jackets,Company Uniforms,Corporate Apparel"
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "quote"]
+}

@@ -19,7 +19,16 @@
         "intro": "Real uploaded photos show green shirts in production plus bold finished shirts with detailed customer artwork."
       }
     },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "tshirts",
+        "eyebrow": "Custom t-shirt pricing",
+        "heading": "Custom T-Shirts starting at $299.",
+        "intro": "Softstyle shirts are the recommended default package for most customers. Rush and specialty orders require quote review."
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "gallery", "quote"]
+  "order": ["main", "gallery", "pricing", "quote"]
 }

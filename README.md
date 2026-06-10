@@ -15,6 +15,7 @@ L F Graphco LLC provides screen printing, embroidery, DTF printing, promotional 
 - SEO landing page templates for Garland, Mesquite, Dallas and DFW
 - Google Analytics, Google Tag Manager, Meta Pixel, Klaviyo and Google Ads placeholders
 - Merchant Center, deployment and tracking documentation
+- Brand palette and optimized logo/favicons derived from `brand-assets/logos`
 
 ## Theme settings
 
@@ -25,3 +26,4 @@ Configure the business phone, location, primary CTA, brand colors and marketing 
 - `docs/SHOPIFY_DEPLOYMENT.md`
 - `docs/MERCHANT_CENTER.md`
 - `docs/TRACKING_AND_MARKETING.md`
+- `docs/BRAND_ASSETS.md`

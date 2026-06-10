@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "DTF Printing Garland TX",
+        "heading": "Detailed full-color apparel output for bold customer artwork.",
+        "lead": "The uploaded photos do not show a standalone DTF machine, but they do show detailed full-color shirt output and production proof that fits transfer-style apparel conversations.",
+        "body": "<p>DTF printing is useful when artwork has gradients, small details, multiple colors or a lower quantity than a traditional screen printing setup. The uploaded photos show full-color customer apparel with sponsor logos, illustrated designs and detailed graphics on dark and light garments.</p><p>Use DTF for detailed shirt designs, short runs, customer artwork, event graphics, sponsor-heavy layouts and apparel campaigns where color flexibility matters.</p>",
+        "features": "Full-Color Artwork,Detailed Graphics,Short Runs,Sponsor Logos,Customer Apparel"
+      }
+    },
+    "gallery": {
+      "type": "photo-gallery",
+      "settings": {
+        "gallery_type": "dtf",
+        "eyebrow": "Full-color proof",
+        "heading": "Detailed apparel examples from uploaded photos.",
+        "intro": "These photos show full-color output and production proof; they are used for DTF marketing without claiming a DTF machine is pictured."
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "gallery", "quote"]
+}

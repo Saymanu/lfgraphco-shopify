@@ -25,10 +25,10 @@
         {% if form.posted_successfully? %}<p><strong>Thanks. Your request has been sent.</strong></p>{% endif %}
         {{ form.errors | default_errors }}
         <input type="hidden" name="contact[form_type]" value="{{ section.settings.form_context }}">
-        <div class="field"><label for="LeadName-{{ section.id }}">Name</label><input id="LeadName-{{ section.id }}" name="contact[name]" required></div>
-        <div class="field"><label for="LeadCompany-{{ section.id }}">Company or Organization</label><input id="LeadCompany-{{ section.id }}" name="contact[organization]"></div>
-        <div class="field"><label for="LeadEmail-{{ section.id }}">Email</label><input id="LeadEmail-{{ section.id }}" type="email" name="contact[email]" required></div>
-        <div class="field"><label for="LeadPhone-{{ section.id }}">Phone</label><input id="LeadPhone-{{ section.id }}" name="contact[phone]" required></div>
+        <div class="field"><label for="LeadName-{{ section.id }}">Name</label><input id="LeadName-{{ section.id }}" name="contact[name]" autocomplete="name" required></div>
+        <div class="field"><label for="LeadCompany-{{ section.id }}">Company or Organization</label><input id="LeadCompany-{{ section.id }}" name="contact[organization]" autocomplete="organization"></div>
+        <div class="field"><label for="LeadEmail-{{ section.id }}">Email</label><input id="LeadEmail-{{ section.id }}" type="email" name="contact[email]" autocomplete="email" required></div>
+        <div class="field"><label for="LeadPhone-{{ section.id }}">Phone</label><input id="LeadPhone-{{ section.id }}" name="contact[phone]" autocomplete="tel" required></div>
         <div class="field"><label for="LeadProject-{{ section.id }}">Project Type</label><select id="LeadProject-{{ section.id }}" name="contact[quote_type]"><option>Screen Printing</option><option>Embroidery</option><option>DTF Printing</option><option>Promotional Products</option><option>Team Store</option><option>School Spirit Wear</option><option>Company Uniforms</option><option>Church Apparel</option><option>Fundraiser</option></select></div>
         <div class="field-row">
           <div class="field"><label for="LeadQuantity-{{ section.id }}">Quantity</label><input id="LeadQuantity-{{ section.id }}" name="contact[quantity]" placeholder="Example: 100 shirts"></div>

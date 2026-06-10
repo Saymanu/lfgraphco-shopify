@@ -1,10 +1,12 @@
 {
   "sections": {
     "hero": { "type": "home-hero" },
+    "photos": { "type": "home-photo-showcase" },
     "services": { "type": "services-grid" },
     "products": { "type": "product-categories" },
     "trust": { "type": "trust-section" },
+    "photo_trust": { "type": "trust-photo-strip" },
     "quote": { "type": "quote-band" }
   },
-  "order": ["hero", "services", "products", "trust", "quote"]
+  "order": ["hero", "photos", "services", "products", "trust", "photo_trust", "quote"]
 }

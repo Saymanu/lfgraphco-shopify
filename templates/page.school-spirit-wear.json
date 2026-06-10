@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "School Spirit Wear",
+        "heading": "School spirit wear for clubs, campuses and booster programs.",
+        "lead": "Create custom shirts, hoodies, polos and fundraiser apparel with a clear quote path and local Garland support.",
+        "body": "<p>L F Graphco helps schools and parent groups turn mascot art, event designs and campus colors into apparel students and families want to wear. Use spirit wear for game days, clubs, teacher shirts, senior events, field trips and fundraiser campaigns.</p><p>Request pricing with your school name, logo files, quantity goal, garment preferences and deadline.</p>",
+        "features": "Spirit Shirts,Hoodies,Booster Clubs,Campus Events,Online Stores"
+      }
+    },
+    "mockup": { "type": "mockup-offer" },
+    "trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "School apparel can include printing, embroidery and DTF.",
+        "intro": "Start with a rough idea or finished artwork. L F Graphco can help choose the right production path for your deadline."
+      }
+    },
+    "lead": {
+      "type": "lead-capture",
+      "settings": {
+        "eyebrow": "Spirit wear quote",
+        "heading": "Ready to price school apparel?",
+        "intro": "Send the school name, quantity, project type and due date. The goal is to get you to a useful quote quickly.",
+        "form_context": "School spirit wear landing page"
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "mockup", "trust", "lead", "quote"]
+}

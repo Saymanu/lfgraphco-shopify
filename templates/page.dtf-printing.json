@@ -28,7 +28,14 @@
         "intro": "Bulk discounts are available. Upload your artwork for review before final pricing."
       }
     },
+    "conversion_trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "DTF supports detailed apparel and fast quote requests.",
+        "intro": "Pair detailed full-color artwork with screen printing, embroidery or promotional products when the project needs more than one decoration path."
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "gallery", "pricing", "quote"]
+  "order": ["main", "gallery", "pricing", "conversion_trust", "quote"]
 }

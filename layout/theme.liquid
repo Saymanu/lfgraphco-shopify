@@ -46,6 +46,7 @@
       {{ content_for_layout }}
     </main>
     {% sections 'footer-group' %}
+    {% render 'exit-intent-popup' %}
     <div class="mobile-cta" aria-label="Quick contact actions">
       <a href="tel:{{ settings.business_phone | remove: '-' | remove: ' ' }}">Call {{ settings.business_phone }}</a>
       <a href="/pages/request-a-quote">Request Quote</a>

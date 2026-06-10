@@ -28,7 +28,14 @@
         "intro": "Great for companies, churches, schools, medical offices, restaurants and real estate teams."
       }
     },
+    "conversion_trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Embroidery works with full apparel and promo programs.",
+        "intro": "Quote polos, hats and jackets alongside screen printed shirts, DTF artwork and promotional products."
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "gallery", "pricing", "quote"]
+  "order": ["main", "gallery", "pricing", "conversion_trust", "quote"]
 }

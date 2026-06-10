@@ -1,0 +1,59 @@
+{% liquid
+  assign title = section.settings.heading
+  assign intro = section.settings.intro
+%}
+<section class="section photo-gallery-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2>{{ title }}</h2>
+      <p>{{ intro }}</p>
+    </div>
+    <div class="photo-gallery">
+      {% case section.settings.gallery_type %}
+        {% when 'about' %}
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_4562.heic" alt="L F Graphco shop sign listing screen printing, embroidery, shirts, reunions, schools and sports" loading="lazy"><figcaption>Shop signage reflects the core work: screen printing, embroidery, shirts, schools, sports and family reunions.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_1567.HEIC" alt="Boxes and apparel staged outside the L F Graphco workspace" loading="lazy"><figcaption>Workspace activity with apparel blanks and supplies staged for customer jobs.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_2085.jpg" alt="Finished Impact Dallas wellness symposium shirts" loading="lazy"><figcaption>Community event shirts with multiple sponsor logos and bilingual messaging.</figcaption></figure>
+        {% when 'screen_printing' %}
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_1051.HEIC" alt="Green camp shirts on screen printing equipment" loading="lazy"><figcaption>Green shirts shown on production equipment during a multi-shirt print run.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_2129.jpg" alt="Finished Phi Gamma Delta formal shirt with sunset artwork" loading="lazy"><figcaption>Detailed event artwork on a black shirt for a group order.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_3663.JPG" alt="Finished Ambitions as a Rider shirt with car artwork" loading="lazy"><figcaption>Large front graphic with photo-style detail and bold typography.</figcaption></figure>
+        {% when 'embroidery' %}
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_5969.HEIC" alt="Multi-head embroidery equipment" loading="lazy"><figcaption>Embroidery machines set up for stitched logo production.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_3122.HEIC" alt="Close-up of embroidered lettering on a black cap" loading="lazy"><figcaption>Close-up cap embroidery showing raised stitching and clean edges.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/FullSizeRender.HEIC" alt="Gray leadership pullover with embroidered chest logo" loading="lazy"><figcaption>Finished quarter-zip pullover with a left-chest embroidered leadership logo.</figcaption></figure>
+        {% when 'dtf' %}
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_7731.jpg" alt="Detailed full-color shirt graphic on a production surface" loading="lazy"><figcaption>Detailed full-color shirt artwork on a production surface, useful for transfer-style output and proofing.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_2085.jpg" alt="Full-color wellness symposium shirts" loading="lazy"><figcaption>Full-color event apparel with sponsor marks and multiple print colors.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_2129.jpg" alt="Full-color formal event shirt" loading="lazy"><figcaption>Full-color customer artwork with gradients, illustration detail and small lettering.</figcaption></figure>
+        {% when 'promotional' %}
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_2085.jpg" alt="Customer event shirts with sponsor logos" loading="lazy"><figcaption>Event apparel can carry sponsor logos, organization names and campaign messaging.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_1567.HEIC" alt="Production boxes and apparel supplies" loading="lazy"><figcaption>Orders can be staged for group distribution, events and organization campaigns.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_4562.heic" alt="Shop sign advertising printing services" loading="lazy"><figcaption>Local shop support for schools, sports, reunions and custom group projects.</figcaption></figure>
+        {% else %}
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_1051.HEIC" alt="Green shirts in production" loading="lazy"><figcaption>Screen printing production work.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_5969.HEIC" alt="Embroidery machines" loading="lazy"><figcaption>Embroidery equipment in the shop.</figcaption></figure>
+          <figure><img src="https://raw.githubusercontent.com/Saymanu/lfgraphco-shopify/main/brand-assets/photos/IMG_2085.jpg" alt="Finished customer shirts" loading="lazy"><figcaption>Finished customer apparel.</figcaption></figure>
+      {% endcase %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Photo gallery",
+  "settings": [
+    { "type": "select", "id": "gallery_type", "label": "Gallery type", "default": "general", "options": [
+      { "value": "general", "label": "General" },
+      { "value": "about", "label": "About" },
+      { "value": "screen_printing", "label": "Screen printing" },
+      { "value": "embroidery", "label": "Embroidery" },
+      { "value": "dtf", "label": "DTF/full-color output" },
+      { "value": "promotional", "label": "Promotional/customer work" }
+    ] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Photo proof" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Real photos from L F Graphco work." },
+    { "type": "textarea", "id": "intro", "label": "Intro", "default": "A closer look at uploaded shop, equipment and finished product photos." }
+  ]
+}
+{% endschema %}

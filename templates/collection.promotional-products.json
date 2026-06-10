@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "promo",
+        "eyebrow": "Promotional Products",
+        "heading": "Promotional products starting at $0.39.",
+        "intro": "Pens, drinkware, bags, giveaways, employee gifts and event items. Request a quote for accurate pricing."
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "pricing", "quote"]
+}

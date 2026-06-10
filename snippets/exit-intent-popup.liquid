@@ -13,8 +13,8 @@
       {{ form.errors | default_errors }}
       <input type="hidden" name="contact[form_type]" value="Exit intent quote popup">
       <div class="field-row">
-        <div class="field"><label for="ExitName">Name</label><input id="ExitName" name="contact[name]" required></div>
-        <div class="field"><label for="ExitPhone">Phone</label><input id="ExitPhone" name="contact[phone]" required></div>
+        <div class="field"><label for="ExitName">Name</label><input id="ExitName" name="contact[name]" autocomplete="name" required></div>
+        <div class="field"><label for="ExitPhone">Phone</label><input id="ExitPhone" name="contact[phone]" autocomplete="tel" required></div>
       </div>
       <div class="field"><label for="ExitProject">Project Type</label><select id="ExitProject" name="contact[quote_type]"><option>Screen Printing</option><option>Embroidery</option><option>DTF Printing</option><option>Promotional Products</option><option>Team Store</option><option>Fundraiser</option></select></div>
       <button class="button" type="submit">Request A Quote</button>
@@ -33,6 +33,8 @@
       sessionStorage.setItem('lfgraphcoExitPopupSeen', 'true');
       popup.hidden = false;
       document.documentElement.classList.add('exit-popup-open');
+      var firstInput = popup.querySelector('input, select, button, a');
+      if (firstInput) firstInput.focus();
     }
     function closePopup() {
       popup.hidden = true;

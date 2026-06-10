@@ -1,0 +1,7 @@
+{
+  "sections": {
+    "main": { "type": "main-page", "settings": { "eyebrow": "Screen Printing Garland TX", "heading": "Screen printing in Garland, Texas for bulk apparel orders.", "lead": "Get quote-ready screen printing for custom shirts, hoodies, uniforms and event apparel.", "body": "<p>Screen printing is a strong fit for Garland organizations that need durable apparel with clean, repeatable graphics. L F Graphco helps plan order quantities, garment choices, ink colors and deadlines.</p><p>Use this page to request pricing for school shirts, booster club apparel, company uniforms and branded event shirts.</p>", "features": "Garland Screen Printing,Bulk Shirts,Hoodies,Company Uniforms,Event Apparel" } },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "quote"]
+}

@@ -1,0 +1,25 @@
+<section class="hero">
+  <div class="section-inner hero-grid">
+    <div>
+      <p class="eyebrow">Garland, Texas custom apparel and branding</p>
+      <h1>Screen printing, embroidery, team stores and promotional products built to sell.</h1>
+      <p class="lead">L F Graphco LLC helps schools, booster clubs, churches, construction companies, restaurants, medical offices, small businesses and sports teams launch apparel people actually want to wear.</p>
+      <div class="hero-actions">
+        <a class="button" href="/pages/request-a-quote">Request a Quote</a>
+        <a class="button button-secondary" href="tel:{{ settings.business_phone | remove: '-' | remove: ' ' }}">Call {{ settings.business_phone }}</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h2>Fast quote checklist</h2>
+      <ul>
+        <li>Tell us the item, quantity and deadline.</li>
+        <li>Upload artwork or describe the design.</li>
+        <li>Get help choosing print, embroidery or DTF.</li>
+        <li>Launch a store, fundraiser or bulk order.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "Home hero", "settings": [] }
+{% endschema %}

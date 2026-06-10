@@ -1,0 +1,41 @@
+<section class="hero">
+  <div class="section-inner">
+    <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+    <h1>{{ section.settings.heading }}</h1>
+    <p class="lead">{{ section.settings.lead }}</p>
+    <div class="hero-actions">
+      <a class="button" href="/pages/request-a-quote">Request a Quote</a>
+      <a class="button button-secondary" href="tel:{{ settings.business_phone | remove: '-' | remove: ' ' }}">Call {{ settings.business_phone }}</a>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-inner content-grid">
+    <div>
+      {{ section.settings.body }}
+      <ul class="feature-list">
+        {% assign features = section.settings.features | split: "," %}
+        {% for feature in features %}
+          {% if feature != blank %}<li>{{ feature | strip }}</li>{% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <aside class="form-panel">
+      <h2>Get started</h2>
+      <p>Call {{ settings.business_phone }} or send order details for a fast quote.</p>
+      <a class="button" href="/pages/request-a-quote">Request a Quote</a>
+    </aside>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Main page content",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "L F Graphco LLC" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Custom apparel and promotional products in Garland, Texas" },
+    { "type": "textarea", "id": "lead", "label": "Lead", "default": "Professional apparel production, online stores and branded merchandise for North Texas organizations." },
+    { "type": "richtext", "id": "body", "label": "Body", "default": "<p>L F Graphco LLC helps organizations turn apparel ideas into finished products, online stores and fundraising campaigns.</p><p>Use this page to explain services, timelines, artwork needs and next steps for customers who are ready to request pricing.</p>" },
+    { "type": "textarea", "id": "features", "label": "Feature tags", "default": "Screen Printing,Embroidery,DTF Printing,Promotional Products,Team Stores" }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,32 @@
+<section class="section">
+  <div class="section-inner content-grid">
+    <div>
+      {% if product.featured_image %}
+        {{ product.featured_image | image_url: width: 900 | image_tag: loading: 'eager', alt: product.title }}
+      {% else %}
+        <div class="card"><h1>{{ product.title }}</h1><p>Product image placeholder. Add production photography or mockups in Shopify.</p></div>
+      {% endif %}
+    </div>
+    <div>
+      <p class="eyebrow">Custom apparel product</p>
+      <h1>{{ product.title }}</h1>
+      <div>{{ product.description }}</div>
+      {% form 'product', product %}
+        <div class="field">
+          <label for="ProductSelect">Options</label>
+          <select id="ProductSelect" name="id">
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}" {% unless variant.available %}disabled{% endunless %}>{{ variant.title }} - {{ variant.price | money }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="field"><label for="Quantity">Quantity</label><input id="Quantity" type="number" name="quantity" value="1" min="1"></div>
+        <button class="button" type="submit">Add to Cart</button>
+        <a class="button button-secondary" href="/pages/request-a-quote">Request Bulk Quote</a>
+      {% endform %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "Main product", "settings": [] }
+{% endschema %}

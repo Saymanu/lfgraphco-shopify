@@ -1,0 +1,54 @@
+{% liquid
+  assign phone_href = settings.business_phone | remove: '-' | remove: ' '
+%}
+<section class="section lead-capture-section {% if section.settings.use_dark_background %}section-dark{% else %}section-light{% endif %}">
+  <div class="section-inner lead-capture-grid">
+    <div>
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.intro }}</p>
+      <ul class="conversion-checklist">
+        {% assign points = section.settings.bullets | split: "," %}
+        {% for point in points %}
+          {% if point != blank %}<li>{{ point | strip }}</li>{% endif %}
+        {% endfor %}
+      </ul>
+      <div class="section-actions">
+        <a class="button button-dark" href="tel:{{ phone_href }}">Call {{ settings.business_phone }}</a>
+        <a class="button button-secondary" href="/pages/upload-artwork">Upload Artwork</a>
+      </div>
+    </div>
+    <div class="form-panel lead-form-panel">
+      <h3>Get a fast quote</h3>
+      <p>Send the basics and L F Graphco will help match your project to the right decoration method.</p>
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}<p><strong>Thanks. Your request has been sent.</strong></p>{% endif %}
+        {{ form.errors | default_errors }}
+        <input type="hidden" name="contact[form_type]" value="{{ section.settings.form_context }}">
+        <div class="field"><label for="LeadName-{{ section.id }}">Name</label><input id="LeadName-{{ section.id }}" name="contact[name]" required></div>
+        <div class="field"><label for="LeadCompany-{{ section.id }}">Company or Organization</label><input id="LeadCompany-{{ section.id }}" name="contact[organization]"></div>
+        <div class="field"><label for="LeadEmail-{{ section.id }}">Email</label><input id="LeadEmail-{{ section.id }}" type="email" name="contact[email]" required></div>
+        <div class="field"><label for="LeadPhone-{{ section.id }}">Phone</label><input id="LeadPhone-{{ section.id }}" name="contact[phone]" required></div>
+        <div class="field"><label for="LeadProject-{{ section.id }}">Project Type</label><select id="LeadProject-{{ section.id }}" name="contact[quote_type]"><option>Screen Printing</option><option>Embroidery</option><option>DTF Printing</option><option>Promotional Products</option><option>Team Store</option><option>School Spirit Wear</option><option>Company Uniforms</option><option>Church Apparel</option><option>Fundraiser</option></select></div>
+        <div class="field-row">
+          <div class="field"><label for="LeadQuantity-{{ section.id }}">Quantity</label><input id="LeadQuantity-{{ section.id }}" name="contact[quantity]" placeholder="Example: 100 shirts"></div>
+          <div class="field"><label for="LeadDueDate-{{ section.id }}">Due Date</label><input id="LeadDueDate-{{ section.id }}" type="date" name="contact[deadline]"></div>
+        </div>
+        <button class="button" type="submit">Request A Quote</button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Lead capture form",
+  "settings": [
+    { "type": "checkbox", "id": "use_dark_background", "label": "Use dark background", "default": false },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Fast local quote" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Need shirts, uniforms or promo items? Start here." },
+    { "type": "textarea", "id": "intro", "label": "Intro", "default": "Tell us what you need, how many pieces you want and when you need them. The team will respond with next steps for pricing, artwork and production." },
+    { "type": "textarea", "id": "bullets", "label": "Bullet list", "default": "Screen printing and embroidery,DTF transfers and full-color artwork,Team stores and fundraiser programs,Promotional products and branded giveaways" },
+    { "type": "text", "id": "form_context", "label": "Hidden form context", "default": "Homepage lead capture" }
+  ]
+}
+{% endschema %}

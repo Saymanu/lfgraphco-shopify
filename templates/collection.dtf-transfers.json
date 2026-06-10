@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "dtf",
+        "eyebrow": "DTF Transfers",
+        "heading": "DTF transfer pricing for detailed artwork.",
+        "intro": "Transfers start at $2.50 with bulk discounts available. Upload artwork for review."
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "pricing", "quote"]
+}

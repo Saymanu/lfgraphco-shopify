@@ -19,7 +19,16 @@
         "intro": "These photos show full-color output and production proof; they are used for DTF marketing without claiming a DTF machine is pictured."
       }
     },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "dtf",
+        "eyebrow": "DTF transfer pricing",
+        "heading": "DTF Transfers starting at $2.50.",
+        "intro": "Bulk discounts are available. Upload your artwork for review before final pricing."
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "gallery", "quote"]
+  "order": ["main", "gallery", "pricing", "quote"]
 }

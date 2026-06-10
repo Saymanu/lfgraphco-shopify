@@ -1,0 +1,102 @@
+.lead-capture-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(300px, 1.05fr);
+  gap: 2rem;
+  align-items: center;
+}
+.lead-form-panel h3 { margin-bottom: .35rem; }
+.field-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+}
+.conversion-checklist {
+  display: grid;
+  gap: .65rem;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.conversion-checklist li {
+  position: relative;
+  padding-left: 1.55rem;
+  font-weight: 700;
+}
+.conversion-checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .45rem;
+  width: .72rem;
+  height: .72rem;
+  border-radius: 50%;
+  background: var(--color-success);
+  box-shadow: inset 0 0 0 3px rgba(255,255,255,.72);
+}
+.section-dark .conversion-checklist li { color: rgba(255,255,255,.92); }
+.mockup-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  gap: 1.5rem;
+  align-items: center;
+  border: 1px solid rgba(0, 140, 204, .18);
+  border-left: 6px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #fff, #f4fbfe);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  box-shadow: var(--shadow);
+}
+.mockup-actions {
+  display: grid;
+  gap: .75rem;
+}
+.mockup-actions .phone { text-align: center; }
+.trust-service-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.exit-popup[hidden] { display: none; }
+.exit-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+.exit-popup__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.58);
+}
+.exit-popup__dialog {
+  position: relative;
+  width: min(620px, 100%);
+  max-height: min(760px, calc(100vh - 2rem));
+  overflow: auto;
+  border-radius: var(--radius);
+  background: #fff;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  box-shadow: 0 28px 80px rgba(0,0,0,.28);
+}
+.exit-popup__close {
+  position: absolute;
+  right: .75rem;
+  top: .65rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 0;
+  border-radius: 50%;
+  background: #f1f1f1;
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.exit-popup form .button { width: 100%; margin-top: .25rem; }
+.exit-popup form .button + .button { margin-top: .6rem; }
+.exit-popup-open { overflow: hidden; }
+@media (max-width: 920px) {
+  .lead-capture-grid, .mockup-card { grid-template-columns: 1fr; }
+  .trust-service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .trust-service-grid, .field-row { grid-template-columns: 1fr; }
+}

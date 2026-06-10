@@ -1,0 +1,7 @@
+{
+  "sections": {
+    "faq": { "type": "faq" },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["faq", "quote"]
+}

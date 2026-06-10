@@ -1,0 +1,29 @@
+<section class="section">
+  <div class="section-inner content-grid">
+    <div>
+      <p class="eyebrow">Request a quote</p>
+      <h1>Tell us what you need printed, stitched or built.</h1>
+      <p>Use this form for screen printing, embroidery, DTF printing, promotional products, school spirit wear, booster clubs, corporate apparel and team stores.</p>
+    </div>
+    <div class="form-panel">
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}<p><strong>Thanks. Your quote request has been sent.</strong></p>{% endif %}
+        {{ form.errors | default_errors }}
+        <input type="hidden" name="contact[form_type]" value="Request quote">
+        <div class="field"><label for="QuoteName">Name</label><input id="QuoteName" name="contact[name]" required></div>
+        <div class="field"><label for="QuoteEmail">Email</label><input id="QuoteEmail" type="email" name="contact[email]" required></div>
+        <div class="field"><label for="QuotePhone">Phone</label><input id="QuotePhone" name="contact[phone]" required></div>
+        <div class="field"><label for="QuoteOrg">Organization</label><input id="QuoteOrg" name="contact[organization]"></div>
+        <div class="field"><label for="QuoteType">Quote type</label><select id="QuoteType" name="contact[quote_type]"><option>Screen Printing</option><option>Embroidery</option><option>DTF Printing</option><option>Promotional Products</option><option>Team Store</option><option>Fundraiser</option><option>Corporate Apparel</option></select></div>
+        <div class="field"><label for="QuoteService">Service interest</label><input id="QuoteService" name="contact[service_interest]" placeholder="T-shirts, polos, hoodies, hats, promo items"></div>
+        <div class="field"><label for="QuoteQty">Quantity</label><input id="QuoteQty" name="contact[quantity]" placeholder="Example: 72 shirts"></div>
+        <div class="field"><label for="QuoteDeadline">Deadline</label><input id="QuoteDeadline" type="date" name="contact[deadline]"></div>
+        <div class="field"><label for="QuoteArtwork">Artwork notes</label><textarea id="QuoteArtwork" name="contact[artwork_notes]" placeholder="Tell us about logo files, colors, print locations and sizes."></textarea></div>
+        <button class="button" type="submit">Submit Quote Request</button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "Quote form", "settings": [] }
+{% endschema %}

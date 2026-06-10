@@ -28,7 +28,14 @@
         "intro": "Softstyle shirts are the recommended default package for most customers. Rush and specialty orders require quote review."
       }
     },
+    "conversion_trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Screen printing can pair with embroidery, DTF and promo products.",
+        "intro": "Build a complete apparel order around event shirts, staff polos, sponsor graphics and branded giveaways."
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "gallery", "pricing", "quote"]
+  "order": ["main", "gallery", "pricing", "conversion_trust", "quote"]
 }

@@ -5,13 +5,22 @@
       "settings": {
         "eyebrow": "About L F Graphco LLC",
         "heading": "Garland, Texas apparel production for schools, companies and teams.",
-        "lead": "L F Graphco LLC helps North Texas organizations create custom apparel, branded merchandise, online stores and fundraiser programs.",
-        "body": "<p>Based in Garland, Texas, L F Graphco LLC serves customers who need reliable screen printing, embroidery, DTF printing, promotional products, team stores and corporate apparel.</p><p>The storefront is designed around fast quote requests, clean ecommerce category paths and local search visibility for Garland, Mesquite, Dallas and DFW buyers.</p>",
-        "features": "Garland TX,Screen Printing,Embroidery,Team Stores,Promotional Products"
+        "lead": "L F Graphco LLC is a Garland, Texas shop with real production equipment, staged orders and finished customer apparel shown in the uploaded photos.",
+        "body": "<p>The uploaded shop photos show embroidery machines, screen printing work in progress, apparel blanks and boxes staged for production, and finished shirts for community events, Greek life, custom automotive art and organization campaigns.</p><p>That practical mix supports what local buyers need most: clear quote guidance, visible production proof, finished product examples and dependable apparel programs for schools, businesses, teams and community groups.</p>",
+        "features": "Garland TX,Embroidery Equipment,Screen Printing Workflow,Finished Customer Shirts,Shop Workspace"
+      }
+    },
+    "gallery": {
+      "type": "photo-gallery",
+      "settings": {
+        "gallery_type": "about",
+        "eyebrow": "Shop proof",
+        "heading": "A local production shop with visible customer work.",
+        "intro": "Photos show the workspace, service signage, staged orders and finished apparel produced for real groups."
       }
     },
     "trust": { "type": "trust-section" },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "trust", "quote"]
+  "order": ["main", "gallery", "trust", "quote"]
 }

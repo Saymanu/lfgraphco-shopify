@@ -10,7 +10,31 @@
         "features": "Online Ordering,Spirit Wear,Booster Clubs,Employee Apparel,Fundraiser Stores"
       }
     },
+    "mockup": {
+      "type": "mockup-offer",
+      "settings": {
+        "eyebrow": "Launch your store",
+        "heading": "Get a team store plan before collecting orders.",
+        "intro": "Share your organization, products, deadline and artwork. L F Graphco can help outline the store structure and apparel options for your group."
+      }
+    },
+    "trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Team stores can include shirts, hoodies, polos and promo products.",
+        "intro": "Use one quote path for screen printed spirit wear, embroidered staff apparel, full-color DTF designs and branded giveaways."
+      }
+    },
+    "lead": {
+      "type": "lead-capture",
+      "settings": {
+        "eyebrow": "Team store quote",
+        "heading": "Start a store for your team, school or company.",
+        "intro": "Tell us who the store is for, what products you want and when orders need to close.",
+        "form_context": "Team store landing page"
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "quote"]
+  "order": ["main", "mockup", "trust", "lead", "quote"]
 }

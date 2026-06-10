@@ -5,12 +5,21 @@
       "settings": {
         "eyebrow": "Embroidery Garland TX",
         "heading": "Professional embroidered polos, hats, jackets and uniforms.",
-        "lead": "Give your business, school or team a clean professional finish with custom embroidery from L F Graphco LLC.",
-        "body": "<p>Embroidery is the right choice for polos, hats, jackets, bags, uniforms and long-term corporate apparel. It gives logos a dimensional stitched finish that looks polished in the office, on job sites and at events.</p><p>L F Graphco can help with logo placement, thread color planning, garment selection and quote-ready order details.</p>",
-        "features": "Embroidered Polos,Hats,Jackets,Company Uniforms,Corporate Apparel"
+        "lead": "Give your business, school or team a clean professional finish with embroidery equipment and finished stitched samples shown in the uploaded photos.",
+        "body": "<p>The photo set includes multi-head embroidery machines, a close-up embroidered cap and a gray leadership quarter-zip with a stitched left-chest logo. Those examples are ideal for buyers who need a polished apparel option beyond printed shirts.</p><p>Use embroidery for caps, pullovers, polos, jackets, uniforms, staff apparel, team gear and corporate apparel that should look professional over repeated wear.</p>",
+        "features": "Embroidery Machines,Embroidered Caps,Quarter-Zips,Left-Chest Logos,Corporate Apparel"
+      }
+    },
+    "gallery": {
+      "type": "photo-gallery",
+      "settings": {
+        "gallery_type": "embroidery",
+        "eyebrow": "Embroidery proof",
+        "heading": "Machines, caps and stitched apparel from uploaded photos.",
+        "intro": "The embroidery gallery shows actual equipment and finished stitch details customers can evaluate before quoting."
       }
     },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "quote"]
+  "order": ["main", "gallery", "quote"]
 }

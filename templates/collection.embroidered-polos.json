@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "polos",
+        "eyebrow": "Embroidered Polos",
+        "heading": "Professional embroidered polo packages.",
+        "intro": "25 Embroidered Polos start at $375. Ideal for companies, schools, churches, restaurants and medical offices."
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "pricing", "quote"]
+}

@@ -1,0 +1,34 @@
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h2>L F Graphco LLC</h2>
+      <p>Custom apparel, screen printing, embroidery, DTF transfers, promotional products, school spirit wear, booster club apparel, and corporate uniforms from Garland, Texas.</p>
+      <a class="button" href="/pages/request-a-quote">{{ settings.primary_cta }}</a>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <a href="/pages/screen-printing">Screen Printing</a>
+      <a href="/pages/embroidery">Embroidery</a>
+      <a href="/pages/promotional-products">Promotional Products</a>
+      <a href="/pages/team-stores">Team Stores</a>
+      <a href="/pages/upload-artwork">Upload Artwork</a>
+    </div>
+    <div>
+      <h3>Local SEO</h3>
+      <a href="/pages/custom-t-shirts-garland-tx">Custom T-Shirts Garland TX</a>
+      <a href="/pages/custom-shirts-dallas-tx">Custom Shirts Dallas TX</a>
+      <a href="/pages/custom-shirts-mesquite-tx">Custom Shirts Mesquite TX</a>
+      <a href="/pages/school-spirit-wear-dfw">School Spirit Wear DFW</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>{{ settings.business_location }}</p>
+      <p><a href="tel:{{ settings.business_phone | remove: '-' | remove: ' ' }}">{{ settings.business_phone }}</a></p>
+      <p><a href="/pages/faq">FAQ</a></p>
+    </div>
+  </div>
+  <p class="copyright">&copy; {{ 'now' | date: '%Y' }} L F Graphco LLC. All rights reserved.</p>
+</footer>
+{% schema %}
+{ "name": "Footer", "settings": [] }
+{% endschema %}

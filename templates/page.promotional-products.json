@@ -19,7 +19,16 @@
         "intro": "Photos show event apparel, sponsor visibility, shop signage and staging for organization orders."
       }
     },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "promo",
+        "eyebrow": "Promotional product pricing",
+        "heading": "Promotional Products starting at $0.39.",
+        "intro": "Final pricing depends on product, quantity, decoration method, setup and turnaround time."
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "gallery", "quote"]
+  "order": ["main", "gallery", "pricing", "quote"]
 }

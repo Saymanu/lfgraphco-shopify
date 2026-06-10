@@ -1,0 +1,7 @@
+{
+  "sections": {
+    "main": { "type": "main-page", "settings": { "eyebrow": "Booster Club Shirts DFW", "heading": "Booster club shirts and fundraiser apparel across DFW.", "lead": "Launch booster club apparel campaigns with custom shirts, hoodies, spirit wear and online store options.", "body": "<p>Booster clubs need apparel that is easy to promote, order and fulfill. L F Graphco supports DFW groups with quote planning, product options and ecommerce-ready team store structure.</p><p>Use this page for club shirts, parent gear, fan apparel and fundraiser merchandise.</p>", "features": "Booster Clubs,DFW Shirts,Fundraisers,Fan Gear,Online Stores" } },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "quote"]
+}

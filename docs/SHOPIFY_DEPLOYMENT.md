@@ -11,7 +11,11 @@
    - Embroidery: `page.embroidery`
    - Promotional Products: `page.promotional-products`
    - Team Stores: `page.team-stores`
+   - School Spirit Wear: `page.school-spirit-wear`
+   - Company Uniforms: `page.company-uniforms`
+   - Church Apparel: `page.church-apparel`
    - Fundraising: `page.fundraising`
+   - Fundraiser: `page.fundraiser`
    - Contact: `page.contact`
    - Request A Quote: `page.request-a-quote`
    - Upload Artwork: `page.upload-artwork`
@@ -25,7 +29,7 @@ Create Shopify collections for Custom T-Shirts, Embroidered Polos, Hoodies, Safe
 
 ## Launch checklist
 
-- Replace placeholder brand mark with the final logo.
+- Confirm logo, favicon and extracted L F Graphco colors render correctly in the live theme preview.
 - Add product photography or apparel mockups.
 - Confirm phone number, address, policies, shipping and tax settings.
 - Test checkout, contact forms, quote forms and artwork intake.

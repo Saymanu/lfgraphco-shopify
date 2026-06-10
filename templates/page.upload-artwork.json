@@ -1,0 +1,7 @@
+{
+  "sections": {
+    "upload": { "type": "upload-artwork" },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["upload", "quote"]
+}

@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "hoodies",
+        "eyebrow": "Hoodies",
+        "heading": "Hoodie packages for spirit wear, teams and crews.",
+        "intro": "50 Hoodies start at $650. Great for schools, teams, churches, construction crews and company apparel."
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "pricing", "quote"]
+}

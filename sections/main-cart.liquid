@@ -1,0 +1,29 @@
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">Cart</p>
+      <h1>Your order</h1>
+      <p>Review ecommerce items below. For bulk apparel, fundraiser or team store pricing, request a quote.</p>
+    </div>
+    {% if cart.item_count > 0 %}
+      <form action="{{ routes.cart_url }}" method="post">
+        {% for item in cart.items %}
+          <div class="card">
+            <h2>{{ item.product.title }}</h2>
+            <p>{{ item.variant.title }} - {{ item.final_line_price | money }}</p>
+            <label for="Quantity-{{ item.index }}">Quantity</label>
+            <input id="Quantity-{{ item.index }}" name="updates[]" type="number" min="0" value="{{ item.quantity }}">
+          </div>
+        {% endfor %}
+        <p><strong>Total: {{ cart.total_price | money }}</strong></p>
+        <button class="button button-secondary" type="submit" name="update">Update Cart</button>
+        <button class="button" type="submit" name="checkout">Checkout</button>
+      </form>
+    {% else %}
+      <div class="card"><h2>Your cart is empty.</h2><p>Browse product categories or request a quote for custom apparel.</p><a class="button" href="/pages/request-a-quote">Request a Quote</a></div>
+    {% endif %}
+  </div>
+</section>
+{% schema %}
+{ "name": "Main cart", "settings": [] }
+{% endschema %}

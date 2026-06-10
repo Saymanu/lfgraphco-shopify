@@ -11,8 +11,8 @@
           <div class="card">
             <h2>{{ item.product.title }}</h2>
             <p>{{ item.variant.title }} - {{ item.final_line_price | money }}</p>
-            <label for="Quantity-{{ item.index }}">Quantity</label>
-            <input id="Quantity-{{ item.index }}" name="updates[]" type="number" min="0" value="{{ item.quantity }}">
+            <label for="Quantity-{{ forloop.index }}">Quantity</label>
+            <input id="Quantity-{{ forloop.index }}" name="updates[]" type="number" min="0" value="{{ item.quantity }}">
           </div>
         {% endfor %}
         <p><strong>Total: {{ cart.total_price | money }}</strong></p>

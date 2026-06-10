@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "hero": { "type": "home-hero" },
+    "services": { "type": "services-grid" },
+    "products": { "type": "product-categories" },
+    "trust": { "type": "trust-section" },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["hero", "services", "products", "trust", "quote"]
+}

@@ -3,10 +3,19 @@
     "hero": { "type": "home-hero" },
     "photos": { "type": "home-photo-showcase" },
     "services": { "type": "services-grid" },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "featured",
+        "eyebrow": "Featured pricing",
+        "heading": "Popular starting-price packages.",
+        "intro": "Start with a package, then call 972-840-8337, request a quote or upload artwork for final pricing."
+      }
+    },
     "products": { "type": "product-categories" },
     "trust": { "type": "trust-section" },
     "photo_trust": { "type": "trust-photo-strip" },
     "quote": { "type": "quote-band" }
   },
-  "order": ["hero", "photos", "services", "products", "trust", "photo_trust", "quote"]
+  "order": ["hero", "photos", "services", "pricing", "products", "trust", "photo_trust", "quote"]
 }

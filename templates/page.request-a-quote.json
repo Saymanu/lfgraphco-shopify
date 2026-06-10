@@ -1,0 +1,7 @@
+{
+  "sections": {
+    "quote": { "type": "quote-form" },
+    "trust": { "type": "trust-section" }
+  },
+  "order": ["quote", "trust"]
+}

@@ -1,0 +1,21 @@
+<section class="section section-light">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">Shop categories</p>
+      <h2>Popular ecommerce-ready product categories.</h2>
+      <p>Use these collections for Shopify products, Google Shopping feeds, Meta catalog feeds and campaign landing pages.</p>
+    </div>
+    <div class="grid">
+      {% assign categories = "Custom T-Shirts,Embroidered Polos,Hoodies,Safety Apparel,Company Uniforms,Spirit Wear,DTF Transfers,Promotional Products" | split: "," %}
+      {% for category in categories %}
+        <article class="card">
+          <strong>{{ category }}</strong>
+          <p>Build this category with clear variants, sizes, decoration options and quote-driven bulk pricing.</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "Product categories", "settings": [] }
+{% endschema %}

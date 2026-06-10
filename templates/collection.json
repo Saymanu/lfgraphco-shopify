@@ -1,0 +1,7 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "quote"]
+}

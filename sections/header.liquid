@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="announcement">Custom apparel, screen printing, embroidery, team stores and promotional products in {{ settings.business_location }}</div>
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="L F Graphco home">
+      <span class="brand-mark">LF</span>
+      <span>L F Graphco LLC</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/pages/screen-printing">Screen Printing</a>
+      <a href="/pages/embroidery">Embroidery</a>
+      <a href="/pages/promotional-products">Promo Products</a>
+      <a href="/pages/team-stores">Team Stores</a>
+      <a href="/pages/fundraising">Fundraising</a>
+      <a href="/pages/contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="phone" href="tel:{{ settings.business_phone | remove: '-' | remove: ' ' }}">{{ settings.business_phone }}</a>
+      <a class="button button-small" href="/pages/request-a-quote">{{ settings.primary_cta }}</a>
+    </div>
+  </div>
+</header>
+{% schema %}
+{ "name": "Header", "settings": [] }
+{% endschema %}

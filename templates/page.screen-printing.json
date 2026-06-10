@@ -5,12 +5,21 @@
       "settings": {
         "eyebrow": "Screen Printing Garland TX",
         "heading": "Custom screen printed shirts, hoodies and spirit wear.",
-        "lead": "Get durable screen printing for school events, booster clubs, construction crews, restaurants, churches, teams and branded business apparel.",
-        "body": "<p>Screen printing is ideal for larger apparel orders where bold graphics, repeatable color and strong wash durability matter. L F Graphco helps customers plan shirt styles, ink colors, print locations, sizing and deadlines.</p><p>Use screen printing for custom t-shirts, hoodies, safety apparel, spirit wear, event shirts and company uniforms across Garland, Mesquite, Dallas and DFW.</p>",
-        "features": "Custom T-Shirts,Hoodies,Spirit Wear,Safety Apparel,Bulk Orders"
+        "lead": "Get durable screen printing for school events, booster clubs, construction crews, restaurants, churches, teams and branded business apparel, backed by actual production photos.",
+        "body": "<p>The uploaded photos show shirts on production equipment and finished group apparel with bold color, large graphics and detailed event artwork. That makes screen printing a strong fit when a group needs repeatable shirts, clear sponsor logos and a consistent finished look.</p><p>Use screen printing for camp shirts, event shirts, spirit wear, Greek life apparel, organization campaigns, company uniforms and bulk t-shirt orders across Garland, Mesquite, Dallas and DFW.</p>",
+        "features": "Shirts On Press,Full Front Graphics,Event Apparel,Group Orders,Bulk T-Shirts"
+      }
+    },
+    "gallery": {
+      "type": "photo-gallery",
+      "settings": {
+        "gallery_type": "screen_printing",
+        "eyebrow": "Screen printing proof",
+        "heading": "Printed shirts in production and finished customer work.",
+        "intro": "Real uploaded photos show green shirts in production plus bold finished shirts with detailed customer artwork."
       }
     },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "quote"]
+  "order": ["main", "gallery", "quote"]
 }

@@ -1,7 +1,40 @@
 {
   "sections": {
-    "main": { "type": "main-page", "settings": { "eyebrow": "School Spirit Wear DFW", "heading": "School spirit wear for DFW campuses, clubs and teams.", "lead": "Create spirit shirts, hoodies, polos and fundraiser stores for schools and booster clubs across DFW.", "body": "<p>L F Graphco helps DFW schools and booster clubs build apparel programs around campaigns, events, athletics and campus pride. Spirit wear can be produced through bulk orders or online team stores.</p><p>Request a quote with school colors, mascot artwork, quantity goals and deadline.</p>", "features": "DFW Schools,Spirit Shirts,Hoodies,Booster Clubs,Team Stores" } },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "School Spirit Wear DFW",
+        "heading": "School spirit wear for DFW campuses, clubs and teams.",
+        "lead": "Create spirit shirts, hoodies, polos and fundraiser stores for schools and booster clubs across DFW.",
+        "body": "<p>L F Graphco helps DFW schools and booster clubs build apparel programs around campaigns, events, athletics and campus pride. Spirit wear can be produced through bulk orders or online team stores.</p><p>Request a quote with school colors, mascot artwork, quantity goals and deadline.</p>",
+        "features": "DFW Schools,Spirit Shirts,Hoodies,Booster Clubs,Team Stores"
+      }
+    },
+    "mockup": {
+      "type": "mockup-offer",
+      "settings": {
+        "eyebrow": "Spirit wear mockup",
+        "heading": "Turn school colors and mascot art into quote-ready apparel.",
+        "intro": "Send the mascot, logo, colors and quantity goal. L F Graphco can help review placement and decoration options."
+      }
+    },
+    "trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Spirit wear options for schools, clubs and booster programs.",
+        "intro": "Quote shirts, hoodies, polos, DTF designs and promotional items for campus events, athletics and fundraisers."
+      }
+    },
+    "lead": {
+      "type": "lead-capture",
+      "settings": {
+        "eyebrow": "School spirit quote",
+        "heading": "Get spirit wear pricing for your school deadline.",
+        "intro": "Share the school name, project type, estimated quantity and due date so the team can respond with the next step.",
+        "form_context": "School spirit wear landing page"
+      }
+    },
     "quote": { "type": "quote-band" }
   },
-  "order": ["main", "quote"]
+  "order": ["main", "mockup", "trust", "lead", "quote"]
 }

@@ -28,3 +28,4 @@ Configure the business phone, location, primary CTA, brand colors and marketing 
 - `docs/MERCHANT_CENTER.md`
 - `docs/TRACKING_AND_MARKETING.md`
 - `docs/BRAND_ASSETS.md`
+- `docs/PHOTO_ASSET_REVIEW.md`

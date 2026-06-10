@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "pricing": {
+      "type": "pricing-packages",
+      "settings": {
+        "pricing_type": "tshirts",
+        "eyebrow": "Custom T-Shirts",
+        "heading": "Custom T-Shirt packages with clear starting prices.",
+        "intro": "100 Softstyle Shirts start at $449. Call 972-840-8337 or request a quote for exact artwork and turnaround review."
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "pricing", "quote"]
+}

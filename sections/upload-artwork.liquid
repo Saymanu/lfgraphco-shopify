@@ -1,0 +1,24 @@
+<section class="section">
+  <div class="section-inner content-grid">
+    <div>
+      <p class="eyebrow">Upload artwork</p>
+      <h1>Send logo files, design notes and order details.</h1>
+      <p>Shopify contact forms do not attach files by default. Use this intake to describe the artwork, then connect a Shopify file upload app, inbox workflow or Klaviyo form when the store launches.</p>
+    </div>
+    <div class="form-panel">
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}<p><strong>Thanks. Artwork notes have been sent.</strong></p>{% endif %}
+        {{ form.errors | default_errors }}
+        <input type="hidden" name="contact[form_type]" value="Upload artwork">
+        <div class="field"><label for="ArtworkName">Name</label><input id="ArtworkName" name="contact[name]" required></div>
+        <div class="field"><label for="ArtworkEmail">Email</label><input id="ArtworkEmail" type="email" name="contact[email]" required></div>
+        <div class="field"><label for="ArtworkOrder">Order or quote reference</label><input id="ArtworkOrder" name="contact[order_reference]"></div>
+        <div class="field"><label for="ArtworkNotes">Artwork notes</label><textarea id="ArtworkNotes" name="contact[artwork_notes]" required></textarea></div>
+        <button class="button" type="submit">Send Artwork Notes</button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "Upload artwork form", "settings": [] }
+{% endschema %}

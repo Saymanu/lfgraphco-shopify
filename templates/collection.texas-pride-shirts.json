@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "guide": {
+      "type": "retail-collection-guide",
+      "settings": {
+        "eyebrow": "Texas Pride Shirts",
+        "heading": "Texas-inspired shirts for local pride, gifts and everyday wear.",
+        "intro": "Choose a Texas design, select size and shirt color, then check out. For business, school or event versions, request a quote."
+      }
+    }
+  },
+  "order": ["main", "guide"]
+}

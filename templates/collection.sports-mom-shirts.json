@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "guide": {
+      "type": "retail-collection-guide",
+      "settings": {
+        "eyebrow": "Sports Mom Shirts",
+        "heading": "Game day shirts for proud sports moms and families.",
+        "intro": "Pick a design, choose size and color, add sport or player personalization when offered and check out."
+      }
+    }
+  },
+  "order": ["main", "guide"]
+}

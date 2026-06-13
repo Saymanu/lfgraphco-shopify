@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "Shop Collections",
+        "heading": "Ready-to-order apparel designs from L F Graphco.",
+        "lead": "Shop simple shirt designs for gifts, family events, sports parents, bridal parties and Texas pride.",
+        "body": "<p>Shop Collections are the quick checkout lane for customers who want a design, size and shirt color without requesting a quote. For schools, teams, businesses, churches, municipalities or bulk apparel programs, use the Request Quote path instead.</p>",
+        "features": "Select Design,Select Size,Select Shirt Color,Optional Personalization,Checkout and Ship"
+      }
+    },
+    "collections": {
+      "type": "featured-shop-collections",
+      "settings": {
+        "use_light_background": false,
+        "heading": "Choose a ready-to-order collection.",
+        "intro": "These retail collections support easy checkout while custom printing remains the primary L F Graphco service."
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["main", "collections", "quote"]
+}

@@ -3,10 +3,10 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "eyebrow": "DTF Printing Garland TX",
-        "heading": "Detailed full-color apparel output for bold customer artwork.",
-        "lead": "The uploaded photos do not show a standalone DTF machine, but they do show detailed full-color shirt output and production proof that fits transfer-style apparel conversations.",
-        "body": "<p>DTF printing is useful when artwork has gradients, small details, multiple colors or a lower quantity than a traditional screen printing setup. The uploaded photos show full-color customer apparel with sponsor logos, illustrated designs and detailed graphics on dark and light garments.</p><p>Use DTF for detailed shirt designs, short runs, customer artwork, event graphics, sponsor-heavy layouts and apparel campaigns where color flexibility matters.</p>",
+        "eyebrow": "Full-Color Apparel Printing",
+        "heading": "Detailed full-color apparel production for bold customer artwork.",
+        "lead": "DTF is one of the internal production methods L F Graphco can use when a custom apparel project needs detailed color, gradients or smaller-run flexibility.",
+        "body": "<p>Full-color production is part of the custom apparel toolkit L F Graphco uses to help schools, teams, businesses, churches and events get the right finished product.</p><p>Use this path for detailed shirt designs, short runs, customer artwork, event graphics, sponsor-heavy layouts and apparel campaigns where color flexibility matters.</p>",
         "features": "Full-Color Artwork,Detailed Graphics,Short Runs,Sponsor Logos,Customer Apparel"
       }
     },
@@ -23,16 +23,16 @@
       "type": "pricing-packages",
       "settings": {
         "pricing_type": "dtf",
-        "eyebrow": "DTF transfer pricing",
-        "heading": "DTF Transfers starting at $2.50.",
-        "intro": "Bulk discounts are available. Upload your artwork for review before final pricing."
+        "eyebrow": "Full-color apparel pricing",
+        "heading": "Full-color print examples starting at $2.50.",
+        "intro": "These are production-method examples for custom apparel projects. Upload your artwork for review before final pricing."
       }
     },
     "conversion_trust": {
       "type": "conversion-trust",
       "settings": {
-        "heading": "DTF supports detailed apparel and fast quote requests.",
-        "intro": "Pair detailed full-color artwork with screen printing, embroidery or promotional products when the project needs more than one decoration path."
+        "heading": "Full-color production supports detailed custom apparel.",
+        "intro": "Pair detailed artwork with screen printing, embroidery or promotional products when the project needs more than one decoration path."
       }
     },
     "quote": { "type": "quote-band" }

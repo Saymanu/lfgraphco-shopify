@@ -16,6 +16,8 @@
         <p>Request pricing for this custom apparel or promotional product. Final details depend on quantity, artwork, decoration method and turnaround time.</p>
       {% endif %}
       {% form 'product', product %}
+        <p class="eyebrow">Retail checkout</p>
+        <p>Select available design, size and shirt color options. If this product offers personalization, enter the name, date or phrase exactly as it should appear.</p>
         <div class="field">
           <label for="ProductSelect">Options</label>
           <select id="ProductSelect" name="id">
@@ -24,6 +26,8 @@
             {% endfor %}
           </select>
         </div>
+        <div class="field"><label for="Personalization">Optional Personalization</label><input id="Personalization" name="properties[Personalization]" placeholder="Name, date, number or short phrase"></div>
+        <div class="field"><label for="ShirtColorNotes">Shirt Color Notes</label><input id="ShirtColorNotes" name="properties[Shirt color notes]" placeholder="Use if color is not already selected above"></div>
         <div class="field"><label for="Quantity">Quantity</label><input id="Quantity" type="number" name="quantity" value="1" min="1"></div>
         <button class="button" type="submit">Add to Cart</button>
         <a class="button button-secondary" href="/pages/request-a-quote">Request Bulk Quote</a>

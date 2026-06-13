@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "guide": {
+      "type": "retail-collection-guide",
+      "settings": {
+        "eyebrow": "Birthday and Family Event Shirts",
+        "heading": "Ready-to-order shirts for birthdays, reunions and family events.",
+        "intro": "Shop simple family event designs for quick checkout. Request a custom quote for large groups, complex artwork or full event packages."
+      }
+    }
+  },
+  "order": ["main", "guide"]
+}

@@ -1,44 +1,54 @@
 {
   "sections": {
     "hero": { "type": "home-hero" },
-    "photos": { "type": "home-photo-showcase" },
+    "services": { "type": "services-grid" },
+    "shop_collections": {
+      "type": "featured-shop-collections",
+      "settings": {
+        "heading": "Shop ready-to-order shirt collections.",
+        "intro": "Retail collections are the quick checkout lane for simple shirt designs. Custom apparel, uniforms, team stores and bulk orders should still start with a quote."
+      }
+    },
+    "conversion_trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "eyebrow": "Why choose L F Graphco",
+        "heading": "Custom apparel, promotional products and retail shirts from one local shop.",
+        "intro": "L F Graphco helps schools, booster clubs, churches, teams, municipalities and businesses move from idea to finished apparel with quote guidance, artwork support and production options."
+      }
+    },
+    "testimonials": { "type": "testimonials" },
+    "mockup": {
+      "type": "mockup-offer",
+      "settings": {
+        "eyebrow": "Upload artwork",
+        "heading": "Have a logo or design ready?",
+        "intro": "Upload artwork notes or share a file link so L F Graphco can review placement, decoration method, garment choices and quote details."
+      }
+    },
     "lead_capture": {
       "type": "lead-capture",
       "settings": {
-        "eyebrow": "Fast quote request",
+        "eyebrow": "Contact L F Graphco",
         "heading": "Tell us what you need and when you need it.",
         "intro": "Share your project type, quantity and deadline. L F Graphco will help you move from idea to quote-ready details fast.",
         "form_context": "Homepage lead capture"
       }
     },
-    "services": { "type": "services-grid" },
-    "mockup": {
-      "type": "mockup-offer",
-      "settings": {
-        "heading": "Ask about a free mockup with your quote.",
-        "intro": "Upload your logo or describe the idea. The team can review placement, decoration method and garment options before final pricing."
-      }
-    },
+    "photos": { "type": "home-photo-showcase" },
     "pricing": {
       "type": "pricing-packages",
       "settings": {
         "pricing_type": "featured",
-        "eyebrow": "Featured pricing",
+        "eyebrow": "Featured custom pricing",
         "heading": "Popular starting-price packages.",
         "intro": "Start with a package, then call 972-840-8337, request a quote or upload artwork for final pricing."
       }
     },
     "products": { "type": "product-categories" },
-    "conversion_trust": {
-      "type": "conversion-trust",
-      "settings": {
-        "heading": "Production options for every kind of group order.",
-        "intro": "From one-time events to repeat team stores, L F Graphco helps customers choose the right mix of screen printing, embroidery, DTF and promotional products."
-      }
-    },
     "trust": { "type": "trust-section" },
     "photo_trust": { "type": "trust-photo-strip" },
     "quote": { "type": "quote-band" }
   },
-  "order": ["hero", "photos", "lead_capture", "services", "mockup", "pricing", "products", "conversion_trust", "trust", "photo_trust", "quote"]
+  "order": ["hero", "services", "shop_collections", "conversion_trust", "testimonials", "mockup", "lead_capture", "photos", "pricing", "products", "trust", "photo_trust", "quote"]
 }

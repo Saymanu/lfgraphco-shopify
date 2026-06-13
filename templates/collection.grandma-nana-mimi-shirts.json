@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": { "type": "main-collection" },
+    "guide": {
+      "type": "retail-collection-guide",
+      "settings": {
+        "eyebrow": "Grandma / Nana / Mimi Shirts",
+        "heading": "Giftable family shirts with easy personalization.",
+        "intro": "Shop Grandma, Nana, Mimi and family-name shirt designs that can be ordered without a custom quote."
+      }
+    }
+  },
+  "order": ["main", "guide"]
+}

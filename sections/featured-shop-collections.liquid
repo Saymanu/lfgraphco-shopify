@@ -1,0 +1,36 @@
+<section class="section featured-shop-collections {% if section.settings.use_light_background %}section-light{% endif %}">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.intro }}</p>
+    </div>
+    <div class="grid shop-collection-grid">
+      {% assign collections = "Bridal Party Shirts|/collections/bridal-party-shirts|Matching shirts for bachelorette weekends, bridesmaids, showers and wedding-week events.,Grandma / Nana / Mimi Shirts|/collections/grandma-nana-mimi-shirts|Giftable family shirts with sweet names, simple personalization and everyday wearability.,Sports Mom Shirts|/collections/sports-mom-shirts|Easy spirit wear for game day, tournaments and proud sideline families.,Birthday and Family Event Shirts|/collections/birthday-family-event-shirts|Ready-to-order shirts for birthdays, reunions, trips and family celebrations.,Texas Pride Shirts|/collections/texas-pride-shirts|Local-friendly Texas designs that are easy to produce, ship and gift." | split: "," %}
+      {% for item in collections %}
+        {% assign parts = item | split: "|" %}
+        <article class="card shop-collection-card">
+          <p class="eyebrow">Shop Collection</p>
+          <h3>{{ parts[0] }}</h3>
+          <p>{{ parts[2] }}</p>
+          <a class="card-link" href="{{ parts[1] }}">Shop {{ parts[0] }}</a>
+        </article>
+      {% endfor %}
+    </div>
+    <div class="section-actions">
+      <a class="button" href="/pages/shop-collections">View Shop Collections</a>
+      <a class="button button-secondary" href="/pages/request-a-quote">Need a custom bulk order?</a>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Featured shop collections",
+  "settings": [
+    { "type": "checkbox", "id": "use_light_background", "label": "Use light background", "default": true },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Shop Collections" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Ready-to-order apparel designs." },
+    { "type": "textarea", "id": "intro", "label": "Intro", "default": "Shop simple, high-margin shirt designs for gifts, family events, sports parents and Texas pride. For teams, schools, companies or bulk orders, request a custom quote." }
+  ]
+}
+{% endschema %}

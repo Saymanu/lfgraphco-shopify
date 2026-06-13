@@ -5,9 +5,9 @@
       "type": "pricing-packages",
       "settings": {
         "pricing_type": "dtf",
-        "eyebrow": "DTF Transfers",
-        "heading": "DTF transfer pricing for detailed artwork.",
-        "intro": "Transfers start at $2.50 with bulk discounts available. Upload artwork for review."
+        "eyebrow": "Full-Color Apparel Printing",
+        "heading": "Full-color production examples for detailed artwork.",
+        "intro": "This collection template remains for legacy compatibility. L F Graphco quotes finished apparel projects with full-color decoration options instead of selling standalone transfer products."
       }
     },
     "quote": { "type": "quote-band" }

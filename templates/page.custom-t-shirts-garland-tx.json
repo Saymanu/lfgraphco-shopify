@@ -1,6 +1,15 @@
 {
   "sections": {
-    "main": { "type": "main-page", "settings": { "eyebrow": "Custom T-Shirts Garland TX", "heading": "Custom t-shirts in Garland, Texas for schools, teams and businesses.", "lead": "Order custom t-shirts, hoodies and event apparel from L F Graphco LLC in Garland, Texas.", "body": "<p>L F Graphco creates custom t-shirts for Garland schools, booster clubs, churches, small businesses, construction crews, restaurants, medical offices and sports teams.</p><p>Request pricing for screen printing, DTF printing, spirit wear, company uniforms and bulk apparel orders.</p>", "features": "Garland TX,Custom T-Shirts,Screen Printing,DTF Printing,Spirit Wear" } },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "eyebrow": "Custom T-Shirts Garland TX",
+        "heading": "Custom t-shirts in Garland, Texas for schools, teams and businesses.",
+        "lead": "Order custom t-shirts, hoodies and event apparel from L F Graphco LLC in Garland, Texas.",
+        "body": "<p>L F Graphco creates custom t-shirts for Garland schools, booster clubs, churches, small businesses, construction crews, restaurants, medical offices and sports teams.</p><p>Request pricing for screen printing, full-color apparel printing, spirit wear, company uniforms and bulk apparel orders.</p>",
+        "features": "Garland TX,Custom T-Shirts,Screen Printing,Full-Color Apparel,Spirit Wear"
+      }
+    },
     "quote": { "type": "quote-band" }
   },
   "order": ["main", "quote"]

@@ -3,7 +3,7 @@
     <div class="section-header">
       <p class="eyebrow">Shop L F Graphco</p>
       <h1>{{ collection.title }}</h1>
-      <p>{{ collection.description | default: "Browse custom apparel, spirit wear, uniforms, DTF transfers and promotional product categories." }}</p>
+      <p>{{ collection.description | default: "Browse custom apparel, retail shirt designs, spirit wear, uniforms and promotional product categories." }}</p>
     </div>
     <div class="grid">
       {% for product in collection.products %}
@@ -15,7 +15,7 @@
           <p>{{ product.price | money }}</p>
         </article>
       {% else %}
-        <article class="card"><h2>Need pricing before products are added?</h2><p>Request a custom quote for t-shirts, embroidered polos, hoodies, safety apparel, company uniforms, spirit wear, DTF transfers or promotional products.</p><a class="button" href="/pages/request-a-quote">Request A Quote</a></article>
+        <article class="card"><h2>Need pricing before products are added?</h2><p>Request a custom quote for t-shirts, embroidered polos, hoodies, safety apparel, company uniforms, spirit wear, banners, signs or promotional products.</p><a class="button" href="/pages/request-a-quote">Request A Quote</a></article>
       {% endfor %}
     </div>
   </div>

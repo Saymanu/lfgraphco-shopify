@@ -9,11 +9,14 @@
    - About Us: `page.about`
    - Screen Printing: `page.screen-printing`
    - Embroidery: `page.embroidery`
+   - Full-Color Apparel Printing: `page.dtf-printing`
    - Promotional Products: `page.promotional-products`
    - Team Stores: `page.team-stores`
    - School Spirit Wear: `page.school-spirit-wear`
    - Company Uniforms: `page.company-uniforms`
    - Church Apparel: `page.church-apparel`
+   - Banners and Signs: `page.banners-signs`
+   - Shop Collections: `page.shop-collections`
    - Fundraising: `page.fundraising`
    - Fundraiser: `page.fundraiser`
    - Contact: `page.contact`
@@ -25,12 +28,21 @@
 
 ## Product setup
 
-Create Shopify collections for Custom T-Shirts, Embroidered Polos, Hoodies, Safety Apparel, Company Uniforms, Spirit Wear, DTF Transfers and Promotional Products. Use clear product titles, size variants, color variants, pricing, images and collection assignments.
+Create Shopify collections for Custom T-Shirts, Embroidered Polos, Hoodies, Safety Apparel, Company Uniforms, Spirit Wear, Banners and Signs, Promotional Products and the five retail shop collections. Use clear product titles, size variants, color variants, personalization properties, pricing, images and collection assignments.
+
+Retail collection handles:
+
+- `bridal-party-shirts`
+- `grandma-nana-mimi-shirts`
+- `sports-mom-shirts`
+- `birthday-family-event-shirts`
+- `texas-pride-shirts`
 
 ## Launch checklist
 
 - Confirm logo, favicon and extracted L F Graphco colors render correctly in the live theme preview.
 - Add product photography or apparel mockups.
+- Add retail products with size, shirt color and optional personalization options.
 - Confirm phone number, address, policies, shipping and tax settings.
 - Test checkout, contact forms, quote forms and artwork intake.
 - Fill tracking IDs in theme settings only after accounts are ready.

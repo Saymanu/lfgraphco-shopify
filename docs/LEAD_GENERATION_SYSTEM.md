@@ -8,7 +8,7 @@ L F Graphco's Shopify theme includes a conversion system built around quote requ
 - Sticky mobile CTA with `Call 972-840-8337` and `Request Quote`.
 - Exit-intent quote popup with a short Shopify contact form.
 - Free mockup offer sections that encourage artwork upload and quote requests.
-- Reusable trust sections for screen printing, embroidery, DTF printing and promotional products.
+- Reusable trust sections for screen printing, embroidery, full-color apparel production and promotional products.
 
 ## Landing Pages
 
@@ -19,6 +19,8 @@ The theme includes focused page templates for:
 - Company Uniforms
 - Church Apparel
 - Fundraisers
+- Banners and Signs
+- Shop Collections
 
 Each landing page uses conversion-focused copy, trust messaging, a mockup offer, quote CTAs and a lead capture form.
 

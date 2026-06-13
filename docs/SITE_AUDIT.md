@@ -24,7 +24,7 @@ Audit date: 2026-06-10
 - Added an artwork file link field to the quote and upload artwork forms.
 - Added autocomplete attributes to contact, quote, upload artwork, homepage lead capture and popup form fields.
 - Improved exit-intent popup behavior by focusing the first interactive field when the popup opens.
-- Fixed the homepage services grid so DTF Printing links to the DTF service page instead of skipping directly to the quote page.
+- Fixed the homepage services grid so full-color apparel production does not distract from the core custom service path.
 - Improved empty collection messaging with a direct Request A Quote CTA.
 - Updated deployment documentation to remove outdated placeholder-branding language and include the new conversion landing templates.
 - Updated photo documentation to clarify that storefront sections use optimized JPG assets rather than direct HEIC originals.
@@ -44,8 +44,8 @@ Audit date: 2026-06-10
 
 ## Remaining Items Requiring User Input
 
-- Create Shopify pages using the matching templates and handles used by the header/footer links.
-- Add real Shopify products, product images, variants, prices and collection assignments.
+- Create Shopify pages using the matching templates and handles used by the header/footer links, including Shop Collections and Banners and Signs.
+- Add real Shopify products, product images, variants, prices, personalization options and collection assignments.
 - Add blog articles if the blog template will be linked publicly.
 - Add final SEO titles and meta descriptions in Shopify Admin for every live page.
 - Enter real Google Analytics, Google Tag Manager, Meta Pixel, Klaviyo and Google Ads IDs when accounts are ready.

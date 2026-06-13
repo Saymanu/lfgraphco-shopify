@@ -1,18 +1,18 @@
 <section class="section section-light">
   <div class="section-inner">
     <div class="section-header">
-      <p class="eyebrow">Shop categories</p>
-      <h2>Popular ecommerce-ready product categories.</h2>
-      <p>Use these collections for Shopify products, Google Shopping feeds, Meta catalog feeds and campaign landing pages.</p>
+      <p class="eyebrow">Custom printing categories</p>
+      <h2>Popular quote-ready custom product categories.</h2>
+      <p>Use these categories for custom apparel, uniforms, banners, signs, promotional products and local business printing quote requests.</p>
     </div>
     <div class="grid">
-      {% assign categories = "Custom T-Shirts|/collections/custom-t-shirts,Embroidered Polos|/collections/embroidered-polos,Hoodies|/collections/hoodies,Safety Apparel|/collections/safety-apparel,Company Uniforms|/collections/company-uniforms,Spirit Wear|/collections/spirit-wear,DTF Transfers|/collections/dtf-transfers,Promotional Products|/collections/promotional-products" | split: "," %}
+      {% assign categories = "Custom T-Shirts|/collections/custom-t-shirts,Embroidered Polos|/collections/embroidered-polos,Hoodies|/collections/hoodies,Safety Apparel|/collections/safety-apparel,Company Uniforms|/collections/company-uniforms,Spirit Wear|/collections/spirit-wear,Banners and Signs|/pages/banners-signs,Promotional Products|/collections/promotional-products" | split: "," %}
       {% for item in categories %}
         {% assign parts = item | split: "|" %}
         <article class="card">
           <strong>{{ parts[0] }}</strong>
-          <p>Build this category with clear variants, sizes, decoration options and quote-driven bulk pricing.</p>
-          <a class="card-link" href="{{ parts[1] }}">View pricing examples</a>
+          <p>Plan this category with clear quantities, artwork, decoration options and quote-driven bulk pricing.</p>
+          <a class="card-link" href="{{ parts[1] }}">View quote path</a>
         </article>
       {% endfor %}
     </div>

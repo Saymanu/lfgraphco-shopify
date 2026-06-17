@@ -1,0 +1,14 @@
+Subject: 10% off family reunion shirts through August 31
+Preview: Use FAMILY10 on 36+ custom reunion shirts.
+
+Family reunion shirts before the last-minute scramble gets real.
+
+Family reunions move fast once everyone starts asking about colors, sizes, dates, and names. Send the family name, event date, estimated quantity, shirt color idea, and artwork notes. L F Graphco will check the quote path from Garland.
+
+Summer Family Reunion Shirt Sale
+Offer: 10% off custom family reunion shirt quotes of 36+ shirts with code FAMILY10.
+Valid: June 17, 2026 through August 31, 2026.
+Terms: shirts only. Excludes rush fees, shipping, taxes, banners, signs, hoodies, promo products, prior quotes, and automatic Shopify checkout discounts.
+
+Request reunion shirt quote: {{FAMILY_REUNION_SALE_URL}}
+Upload your idea: {{UPLOAD_ARTWORK_URL}}

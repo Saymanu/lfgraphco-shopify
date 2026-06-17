@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "sale": { "type": "family-reunion-sale" },
+    "trust": {
+      "type": "conversion-trust",
+      "settings": {
+        "heading": "Family reunion shirts are handled as custom quote orders.",
+        "intro": "The FAMILY10 sale is for quoted shirt orders of 36+ pieces. L F Graphco reviews artwork, shirt color, quantity and event date before confirming final pricing."
+      }
+    },
+    "quote": { "type": "quote-band" }
+  },
+  "order": ["sale", "trust", "quote"]
+}

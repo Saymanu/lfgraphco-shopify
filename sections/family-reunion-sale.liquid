@@ -1,0 +1,86 @@
+{% liquid
+  assign phone_href = settings.business_phone | remove: '-' | remove: ' '
+%}
+<section class="hero">
+  <div class="section-inner hero-grid">
+    <div>
+      <p class="eyebrow">Summer family reunion shirt sale</p>
+      <h1>10% off family reunion shirts through August 31.</h1>
+      <p class="lead">Use code <strong>FAMILY10</strong> on custom family reunion shirt quotes of 36+ shirts. L F Graphco helps with shirt color, design direction, size planning and production from Garland, Texas.</p>
+      <div class="hero-actions">
+        <a class="button" href="#reunion-quote">Request Reunion Shirt Quote</a>
+        <a class="button button-secondary" href="tel:{{ phone_href }}">Call {{ settings.business_phone }}</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h2>Sale terms</h2>
+      <ul>
+        <li>Valid June 17, 2026 through August 31, 2026.</li>
+        <li>Use code FAMILY10 when requesting your quote.</li>
+        <li>Applies to 36+ custom family reunion shirts.</li>
+        <li>Shirts only. Excludes rush fees, shipping, taxes, banners, signs, hoodies, promo products and prior quotes.</li>
+        <li>Discount is manually applied during quote review, not at Shopify checkout.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">Choose a reunion shirt idea</p>
+      <h2>Simple concepts that are easy to quote and produce.</h2>
+      <p>Start with one of these family reunion shirt ideas, then send the family name, event date, quantity, sizes and shirt color preferences.</p>
+    </div>
+    <div class="grid">
+      {% assign ideas = "Family Reunion 2026,Cousin Crew,Family Name Legacy Shirt,Generations Strong,Reunion Weekend Crew,Family Picnic Shirt,Matching Family Trip Shirt,Family Roots Shirt,Grandma's Crew,Family Team Shirt,Family Vacation 2026,Custom Family Name + Date" | split: "," %}
+      {% for idea in ideas %}
+        <article class="card">
+          <strong>{{ idea }}</strong>
+          <p>One-sided shirt concept with simple print colors, family name/date options and quote-friendly production.</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reunion-quote">
+  <div class="section-inner content-grid">
+    <div>
+      <p class="eyebrow">Request reunion pricing</p>
+      <h2>Send your family reunion shirt details.</h2>
+      <p>Tell L F Graphco the family name, event date, estimated quantity, shirt color, sizes and design idea. Mention <strong>FAMILY10</strong> so the 10% summer sale can be reviewed with your quote.</p>
+      <ul class="feature-list">
+        <li>36+ shirt minimum</li>
+        <li>Shirts only</li>
+        <li>Garland, Texas support</li>
+        <li>Artwork review available</li>
+      </ul>
+    </div>
+    <div class="form-panel">
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}<p><strong>Thanks. Your family reunion quote request has been sent.</strong></p>{% endif %}
+        {{ form.errors | default_errors }}
+        <input type="hidden" name="contact[form_type]" value="Family reunion summer sale">
+        <input type="hidden" name="contact[quote_type]" value="Family Reunion Shirts">
+        <input type="hidden" name="contact[promo_code]" value="FAMILY10">
+        <div class="field"><label for="ReunionName">Name</label><input id="ReunionName" name="contact[name]" autocomplete="name" required></div>
+        <div class="field"><label for="ReunionEmail">Email</label><input id="ReunionEmail" type="email" name="contact[email]" autocomplete="email" required></div>
+        <div class="field"><label for="ReunionPhone">Phone</label><input id="ReunionPhone" name="contact[phone]" autocomplete="tel" required></div>
+        <div class="field"><label for="ReunionFamily">Family name</label><input id="ReunionFamily" name="contact[family_name]" placeholder="Example: Johnson Family"></div>
+        <div class="field"><label for="ReunionIdea">Design idea</label><select id="ReunionIdea" name="contact[service_interest]"><option>Family Reunion 2026</option><option>Cousin Crew</option><option>Family Name Legacy Shirt</option><option>Generations Strong</option><option>Reunion Weekend Crew</option><option>Family Picnic Shirt</option><option>Matching Family Trip Shirt</option><option>Family Roots Shirt</option><option>Grandma's Crew</option><option>Family Team Shirt</option><option>Family Vacation 2026</option><option>Custom Family Name + Date</option></select></div>
+        <div class="field-row">
+          <div class="field"><label for="ReunionQty">Estimated quantity</label><input id="ReunionQty" name="contact[quantity]" placeholder="Example: 50 shirts" required></div>
+          <div class="field"><label for="ReunionDate">Event date</label><input id="ReunionDate" type="date" name="contact[deadline]"></div>
+        </div>
+        <div class="field"><label for="ReunionColors">Shirt color and size notes</label><textarea id="ReunionColors" name="contact[artwork_notes]" placeholder="Tell us shirt colors, adult/youth sizes, print color ideas and any family name/date details."></textarea></div>
+        <div class="field"><label for="ReunionArtwork">Artwork file link</label><input id="ReunionArtwork" type="url" name="contact[artwork_link]" placeholder="Google Drive, Dropbox or website URL"></div>
+        <button class="button" type="submit">Request Reunion Shirt Quote</button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{ "name": "Family reunion sale", "settings": [] }
+{% endschema %}

@@ -23,26 +23,30 @@
    - Request A Quote: `page.request-a-quote`
    - Upload Artwork: `page.upload-artwork`
    - FAQ: `page.faq`
+   - Family Reunion Shirt Sale: `page.family-reunion-shirts-sale`
 5. Create local SEO pages using the matching page templates for Garland, Mesquite, Dallas and DFW search targets.
 6. Configure navigation links to match the header and footer paths.
 
 ## Product setup
 
-Create Shopify collections for Custom T-Shirts, Embroidered Polos, Hoodies, Safety Apparel, Company Uniforms, Spirit Wear, Banners and Signs, Promotional Products and the five retail shop collections. Use clear product titles, size variants, color variants, personalization properties, pricing, images and collection assignments.
+Create Shopify collections for Custom T-Shirts, Embroidered Polos, Hoodies, Safety Apparel, Company Uniforms, Spirit Wear, Banners and Signs, Promotional Products and the five retail shop collections. Use clear product titles, size variants, color variants, personalization properties, pricing, images and collection assignments. Birthday and Family Event Shirts can remain a future collection, but Teacher Shirts should be the active school-friendly retail launch focus.
 
 Retail collection handles:
 
 - `bridal-party-shirts`
 - `grandma-nana-mimi-shirts`
 - `sports-mom-shirts`
-- `birthday-family-event-shirts`
+- `teacher-shirts`
 - `texas-pride-shirts`
+
+The first retail product launch package lives in `marketing/shopify-retail-products-launch.csv` with supporting notes in `docs/RETAIL_PRODUCT_LAUNCH_PACKAGE.md`.
 
 ## Launch checklist
 
 - Confirm logo, favicon and extracted L F Graphco colors render correctly in the live theme preview.
-- Add product photography or apparel mockups.
+- Add product photograpy or apparel mockups.
 - Add retail products with size, shirt color and optional personalization options.
 - Confirm phone number, address, policies, shipping and tax settings.
 - Test checkout, contact forms, quote forms and artwork intake.
 - Fill tracking IDs in theme settings only after accounts are ready.
+- Create the Family Reunion Shirt Sale page with handle `family-reunion-shirts-sale` before promoting the summer sale.
